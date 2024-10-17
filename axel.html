@@ -56,20 +56,6 @@
             margin: 0px 0;
         }
 
-        .form {
-            width: 90%;
-            max-width: 950px;
-            margin: auto;
-            padding: 10px;
-            flex: 1;
-        }
-
-        iframe {
-            width: 100%;
-            height: 1650px;
-            border: 0;
-        }
-
         img {
             width: 25%;
             max-width: auto;
@@ -78,7 +64,7 @@
             margin: 0px auto;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 699px) {
             h1 {
                 font-size: 36px;
                 line-height: 50px;
@@ -88,7 +74,129 @@
                 width: 100%;
                 height: 150px;
             }
+            ul{
+                text-align:left;
+                text-indent:-10%;
+                width:340px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:10px;
+                
+                
+            }
+            dl{
+                text-align:left;
+                text-indent:-10%;
+                width:340px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:10px;
         }
+        .form {
+            width: 90%;
+            max-width: 870px;
+            margin: auto;
+            padding: 10px;
+            flex: 1;
+    }
+    iframe {
+            width: 751px;
+            height: 1020px;
+            border: none;
+        }
+
+    }
+            @media screen and (min-width:700px) {
+                
+                ul{
+                text-align:left;
+                text-indent:-2%;
+                width:650px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:24px;
+                padding-right:5px;
+                margin-left:60px;
+            }
+
+            dl{
+                text-align:left;
+                text-indent:-2%;
+                width:650px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:24px;
+                padding-right:5px;
+                margin-left:60px;
+        }
+        .form {
+            padding: 0px;
+            flex: 1;
+            margin-right:150px;
+    }
+    iframe {
+            width: 751px;
+            height: 1020px;
+            border: none;
+        }
+}
+
+        @media screen and (min-width:1000px) {
+                ul{
+                text-align:left;
+                text-indent:-4%;
+                width:850px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:510px;
+            }
+
+            dl{
+                text-align:left;
+                text-indent:-4%;
+                width:850px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:510px;
+            }
+            .form {
+            width: 90%;
+            height: 3px;
+            max-width: 870px;
+            margin: auto;
+            padding: 0px;
+            flex: 1;
+        }
+            .forms {
+            width: 90%;
+            height: 3px;
+            max-width: 870px;
+            margin: auto;
+            margin-right:536px;
+            padding: 0px;
+            flex: 1;
+        }
+        iframe {
+            width: 325px;
+            height: 265px;
+            border:none;
+            margin-left:270px;
+        }
+    }
 
         /* Dropdown styles */
         .dropdown {
@@ -147,12 +255,12 @@
     <div class="pages">
         <p>
             <div style="background-color: #E42B39" class="dropdown">
-                <a style="width:69px;border:2px solid black" href="https://docs.google.com/spreadsheets/d/1GYXJDS757Yl8MLF68QUUnlGA2Rr8vgmiC-3XivG4H8Y/edit?usp=sharing" title="View the original SpreadSheet"><b>Sheet</b><img src="sheets.png" alt="sheets logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                <a style="width:70px;border:2px solid black" href="index.html" title="Go back to the home page"><b>Home</b><img src="home.png" alt="Home" style="float:right;width:20px;height:20px;margin-left:5px;margin-bottom:1px"></a>
                 <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
                 <div style="background-color: #E42B39;position:absolute" id="myDropdown" class="dropdown-content">
                      <a href="requests.html">Addison</a>
                     <a href="some_other_requests.html">Alexis</a>
-                    <a href="axel.html">Axel</a>
+                    <a href="contact.html">Axel</a>
                     <a href="requests.html">Cally</a>
                     <a href="some_other_requests.html">Cameron</a>
                     <a href="contact.html">Cindy</a>
@@ -193,10 +301,13 @@
     
 
     <div class="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzgK9ZQTUqcPcOOKulfdlgIWJ7c9PXZq9lj2oYjFJvnaQFCQ/viewform?embedded=true">
-            Loading…
-        </iframe>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKh99d-cKrPRDYvW4qN4TzbuPVA-hvmzOnraLTkdecpdHUm3RZw3Y3Q25Xp54JmfRfbObsse9PiWP7/pubhtml?gid=272129311&range=I2:K7&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        
     </div>
+    <div class="forms">
+        <iframe style="width: 386px; height:578px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKh99d-cKrPRDYvW4qN4TzbuPVA-hvmzOnraLTkdecpdHUm3RZw3Y3Q25Xp54JmfRfbObsse9PiWP7/pubhtml?gid=39625957&range=G2:H19&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
+    
 
     <script>
         function myFunction() {

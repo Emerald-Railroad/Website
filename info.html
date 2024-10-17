@@ -77,8 +77,13 @@
             display: block;
             margin: 0px auto;
         }
+        ul{
+                text-align:left;
+                list-style-position: inside;
+                text-indent: 30%;
+            }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 699px) {
             h1 {
                 font-size: 36px;
                 line-height: 50px;
@@ -88,7 +93,84 @@
                 width: 100%;
                 height: 150px;
             }
+            ul{
+                text-align:left;
+                text-indent:-10%;
+                width:340px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:10px;
+                
+                
+            }
+            dl{
+                text-align:left;
+                text-indent:-10%;
+                width:340px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:10px;
         }
+    }
+            @media screen and (min-width:700px) {
+                
+                ul{
+                text-align:left;
+                text-indent:-2%;
+                width:650px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:24px;
+                padding-right:5px;
+                margin-left:60px;
+            }
+
+            dl{
+                text-align:left;
+                text-indent:-2%;
+                width:650px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:24px;
+                padding-right:5px;
+                margin-left:60px;
+        }
+    }
+
+        @media screen and (min-width:1000px) {
+                ul{
+                text-align:left;
+                text-indent:-4%;
+                width:850px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:510px;
+            }
+
+            dl{
+                text-align:left;
+                text-indent:-4%;
+                width:850px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:510px;
+            }
+        }
+        
 
         /* Dropdown styles */
         .dropdown {
@@ -142,17 +224,16 @@
 </head>
 
 <body>
-    <h1><a href="info.html" style="background-color:inherit;color:inherit;padding:inherit;display:inherit;margin:inherit"><img src="info.png" alt="Info Button" style="position:absolute;width:30px;height:35px;margin-left:5px;margin-top:5px;margin-bottom:5px" title="Poster Rules and New Info"></a>Poster Requests</h1>
-    <img src="amcbackground.jpg" alt="AMC Longview 10" width="720" height="1080">
+    <h1>Info Page</h1>
     <div class="pages">
         <p>
             <div style="background-color: #E42B39" class="dropdown">
-                <a style="width:69px;border:2px solid black" href="https://docs.google.com/spreadsheets/d/1GYXJDS757Yl8MLF68QUUnlGA2Rr8vgmiC-3XivG4H8Y/edit?usp=sharing" title="View the original SpreadSheet"><b>Sheet</b><img src="sheets.png" alt="sheets logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
-                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
+                <a style="width:70px;border:2px solid black" href="index.html" title="Go back to the home page"><b>Home</b><img src="home.png" alt="Home" style="float:right;width:20px;height:20px;margin-left:5px;margin-bottom:1px"></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px"></button>
                 <div style="background-color: #E42B39;position:absolute" id="myDropdown" class="dropdown-content">
                      <a href="requests.html">Addison</a>
                     <a href="some_other_requests.html">Alexis</a>
-                    <a href="axel.html">Axel</a>
+                    <a href="contact.html">Axel</a>
                     <a href="requests.html">Cally</a>
                     <a href="some_other_requests.html">Cameron</a>
                     <a href="contact.html">Cindy</a>
@@ -185,18 +266,38 @@
                     <a href="contact.html">Voet</a>
                 </div>
                 
-                <a style="border:2px solid black" href="https://amctheatres.workplace.com/profile.php?id=100093047487747" title="Contact Axel if you have any questions"><b>Contact</b><img src="workplace.jpg" alt="workplace logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                <a style="border:2px solid black" href="https://amctheatres.workplace.com/profile.php?id=100093047487747" title="Contact Axel if you have any questions"><b>Contact</b><img src="workplace.jpg" alt="workplace logo" style="float:right;width:20px;height:20px;margin-left:5px;margin-bottom:1px;"></a>
                  
             </div>
         </p>
     </div>
     
-
-    <div class="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzgK9ZQTUqcPcOOKulfdlgIWJ7c9PXZq9lj2oYjFJvnaQFCQ/viewform?embedded=true">
-            Loading…
-        </iframe>
-    </div>
+<div = "info page">
+    <h2 style ="text-align:center;background-color:gold;margin-top:0px;"><u>Poster Rules</u></h2>
+    <ul>
+        <li>You can request a poster once per week and up to four posters per month</li>
+        <li>One request can be made, each time the form is submitted</li>
+        <li>Requesting a poster does not guarantee you will receive it</li>
+        <li>Posters appear two months at a time (currently accepting requests for October, November and currently showing movies)</li>
+        <li>All requests are stored on a spreadsheet as well as the website under the view requests tab</li>
+        <li>Requests can be viewed on the original spreadsheet or by clicking on "View Requests" tab and then clicking your name</li>
+        <li>You only have to request a poster once (avoid requesting the same poster more than once)</li>
+      </ul>
+</div>
+<h2 style ="text-align:center;background-color:gold;margin-top:5px;margin-bottom:5px"><u>Website Help</u></h2>
+<div = "info page pt 2">
+    <dl>
+        <dt><b>Sheets Tab</b></dt>
+        <dd>- This tab when clicked will take you to the original spreadsheet, this still gets updated if you prefer it better</dd>
+        <dt><b>View requests Tab</b></dt>
+        <dd>- This tab is the new way your requests can be viewed</dd>
+        <dt><b>Name Dropdown</b></dt>
+        <dd>- When the "View Requests" tab is clicked a dropdown appears with everyones name. click on your name to view your requests</dd>
+        <dt><b>Contact Tab</b></dt>
+        <dd>- This tab will link you directly to Axel's workplace profile so if a question arises you can easily get in contact</dd>
+      </dl>
+</div>
+    
 
     <script>
         function myFunction() {
