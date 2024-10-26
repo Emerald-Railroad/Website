@@ -56,20 +56,6 @@
             margin: 0px 0;
         }
 
-        .form {
-            width: 90%;
-            max-width: 950px;
-            margin: auto;
-            padding: 10px;
-            flex: 1;
-        }
-
-        iframe {
-            width: 100%;
-            height: 1650px;
-            border: 0;
-        }
-
         img {
             width: 25%;
             max-width: auto;
@@ -78,7 +64,7 @@
             margin: 0px auto;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 699px) {
             h1 {
                 font-size: 36px;
                 line-height: 50px;
@@ -88,7 +74,120 @@
                 width: 100%;
                 height: 150px;
             }
+            ul{
+                text-align:left;
+                text-indent:-10%;
+                width:340px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:10px;
+                
+                
+            }
+            dl{
+                text-align:left;
+                text-indent:-10%;
+                width:340px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:10px;
         }
+        .form {
+                margin:0 auto;
+        }
+        .forms{
+            width:100%;
+            height:495px;
+        }
+    iframe {
+            width: 325px;
+            height: 260px;
+            border: none;
+            display:block;
+            margin:0 auto;
+            
+        }
+
+    }
+            @media screen and (min-width:700px) {
+                
+                ul{
+                text-align:left;
+                text-indent:-2%;
+                width:650px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:24px;
+                padding-right:5px;
+                margin-left:60px;
+            }
+
+            dl{
+                text-align:left;
+                text-indent:-2%;
+                width:650px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:24px;
+                padding-right:5px;
+                margin-left:60px;
+        }
+        .form {
+                margin:0 auto;
+        }
+    iframe {
+            width: 325px;
+            height: 260px;
+            border: none;
+            display:block;
+            margin:0 auto;
+        }
+}
+
+        @media screen and (min-width:1000px) {
+                ul{
+                text-align:left;
+                text-indent:-4%;
+                width:850px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:510px;
+            }
+
+            dl{
+                text-align:left;
+                text-indent:-4%;
+                width:850px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:510px;
+            }
+            .form {
+                margin:0 auto;
+        }
+          
+        iframe {
+            width: 325px;
+            height: 265px;
+            border:none;
+            display:block;
+            margin:0 auto;
+        }
+    }
 
         /* Dropdown styles */
         .dropdown {
@@ -147,10 +246,10 @@
     <div class="pages">
         <p>
             <div style="background-color: #E42B39" class="dropdown">
-                <a style="width:69px;border:2px solid black" href="https://docs.google.com/spreadsheets/d/1GYXJDS757Yl8MLF68QUUnlGA2Rr8vgmiC-3XivG4H8Y/edit?usp=sharing" title="View the original SpreadSheet"><b>Sheet</b><img src="sheets.png" alt="sheets logo" style="float:right;width:15px;height:20px;margin-left:5px"></a>
+                <a style="width:70px;border:2px solid black" href="index.html" title="Go back to the home page"><b>Home</b><img src="home.png" alt="Home" style="float:right;width:20px;height:20px;margin-left:5px;margin-bottom:1px"></a>
                 <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
                 <div style="background-color: #E42B39;position:absolute" id="myDropdown" class="dropdown-content">
-                    <a href="addison.html">Addison</a>
+                     <a href="addison.html">Addison</a>
                     <a href="alexis.html">Alexis</a>
                     <a href="ava.html">Ava</a>
                     <a href="axel.html">Axel</a>
@@ -189,13 +288,19 @@
             </div>
         </p>
     </div>
-    
+    <div "Incognito">
+        <h3 style ="text-align:center;background-color:gold;margin-top:0px;margin-bottom:5px;padding:5px;">This page updates about every 5 minutes. To view updates in real time, use the spreadsheet.</h3>
+
+    </div>
 
     <div class="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzgK9ZQTUqcPcOOKulfdlgIWJ7c9PXZq9lj2oYjFJvnaQFCQ/viewform?embedded=true">
-            Loading…
-        </iframe>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0hv7PMBd6lGTnq-qMvRY744e4L-K19_LBkXlp1mmw1CJBqTm5GG2tggkSIGlOVekHmIueh3iU8af9/pubhtml?gid=1981128093&range=M9:O14&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        
     </div>
+    <div class="forms">
+        <iframe style="width: 386px; height:595px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBSbeeTk9VtRBEpD-pGl6fULIEFRLVf48mSsITba-Y1O1Bp3xq7XEhTF-Mdnt4r5FyVoCRSFpo0fRF/pubhtml?gid=1916824074&range=J21:K38&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
+    
 
     <script>
         function myFunction() {
