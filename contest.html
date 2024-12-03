@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC Poster Requests</title>
+    <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
+    <style>
+        body {
+            background-color: #787171;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: sans-serif; /* Set font to sans-serif */
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            border-bottom: 2px solid black;
+            background-color: #E42B39;
+            margin: 0;
+            padding-top: 2px;
+            padding-bottom: 5px;
+        }
+
+        a:link,
+        a:visited {
+            background-color: #ffffff;
+            color: red;
+            padding: 5px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        a:hover,
+        a:active {
+            background-color: lightgray;
+        }
+
+        .pages {
+            text-align: center;
+            margin: 0px 0;
+        }
+
+        .form {
+            width: 90%;
+            max-width: 950px;
+            margin: auto;
+            padding: 10px;
+            flex: 1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 1650px;
+            border: 0;
+        }
+
+        img {
+            width: 25%;
+            max-width: auto;
+            height: 0px;
+            display: block;
+            margin: 0px auto;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: block;
+            position: relative;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: red;
+            padding: 6.6px 5px;
+            text-align: center;
+            border: 2px solid black;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0px;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:active {
+            background-color: lightgray;
+            color:#E42B39
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            
+        }
+        
+		 .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+            .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            
+        }
+
+            .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+            color: #6b6b6b;
+            }
+
+            .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            }
+
+            #main {
+            transition: margin-left .5s;
+            padding: 16px;
+            }
+
+            
+            .logo img{
+                width: 100%;
+                height: fit-content;
+            }
+            @media screen and (min-height: 451px) {
+            .sidenav a {font-size: 20px;}
+            .sidenav {margin-bottom: 100px;}
+            }
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 50px;}
+            .sidenav a {font-size: 18px;}
+            }
+            .highlight {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1><span onclick="openNav()" style="background-color:inherit;color:inherit;padding:inherit;display:inherit;margin:inherit;position:absolute;width:30px;height:35px;margin-left:5px;margin-top:-5px;margin-bottom:5px" title="Poster Rules and New Info"> &#9776;</span>Work Contests</h1>
+
+    <div id="mySidenav" class="sidenav">
+        <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br />
+        <div = "Poster-info">
+            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Poster/Website tools</u></b></h2>
+        </div>
+        <a style="background-color:#E42B39"href="info.html">Rules/website help</a>
+        <a style="background-color:#E42B39"href="inventory.html">Poster Inventory</a>
+        <div = "Theatre-info">
+            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Theatre Info</u></b></h2>
+        </div>
+        <a style="background-color:#E42B39"href="news.html">AMC News</a>
+        <a style="background-color:#E42B39"href="https://amc.cloud.infor.com/etm/">Workforce</a>
+        <a style="background-color:#E42B39"href="ScoreCard.html">ScoreCard</a>
+        <div = "Extra-info">
+            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Extras</u></b></h2>
+        </div>
+        <a style="background-color:#E42B39"href="contest.html">Contests</a>
+        <a style="background-color:#E42B39"href="https://amcgearstore.com/">AMC Gear Store</a>
+        <h2 style="background-color:inherit;font-size: large;text-align:center;color: #ffffff;"><b><u>Gear Store Password</u></b></h2>
+        <h4 style="background-color:inherit;font-size: medium;text-align:center;color: #ffffff;"><b>AMC_GearStore123</b></h4>
+        <div id="logo" class="logo">
+        <h2 style="background-color: inherit;padding:15px"><img src="amcLogoTwo.png"  alt="AMC Logo"></h2>
+        </div>
+      </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "50px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    <div class="pages">
+        <p>
+            <div style="background-color: #E42B39;margin-top:-26px; border-top: 2px solid black;" class="dropdown">
+                <a style="width:110px;border:2px solid black;height: 42px;color:red;" href="index.html" title="Go back to the home page"><b>Home</b><img src="home.png" alt="Home" style="float:right;width:20px;height:20px;margin-left:5px;margin-bottom:1px"></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;margin-top:4px"></button>
+                <div style="background-color: #E42B39;position: absolute" id="myDropdown" class="dropdown-content">
+                    <a href="addison.html">Addison</a>
+                   <a href="alexis.html">Alexis</a>
+                   <a href="ava.html">Ava</a>
+                   <a href="axel.html">Axel</a>
+                   <a href="blake.html">Blake</a>
+                   <a href="cally.html">Cally</a>
+                   <a href="cameron.html">Cameron</a>
+                   <a href="cindy.html">Cindy</a>
+                   <a href="corbin.html">Corbin</a>
+                   <a href="Elizabeth.html">Elizabeth</a>
+                   <a href="haden.html">Haden</a>
+                   <a href="heath.html">Heath</a>
+                   <a href="hector.html">Hector</a>
+                   <a href="jaiden.html">Jaiden</a>
+                   <a href="james.html">James</a>
+                   <a href="jordan.html">Jordan</a>
+                   <a href="kieran.html">Kieran</a>
+                   <a href="liyah.html">Liyah</a>
+                   <a href="madison.html">Madison</a>
+                   <a href="michael kirkman.html">Michael Kirkman</a>
+                   <a href="michael mahana.html">Michael Mahana</a>
+                   <a href="paul.html">Paul</a>
+                   <a href="pj.html">PJ</a>
+                   <a href="presleigh.html">Presleigh</a>
+                   <a href="savana.html">Savana</a>
+                   <a href="sean.html">Sean</a>
+                   <a href="taylor.html">Taylor</a>
+                   <a href="tyler.html">Tyler</a>
+                   <a href="voet.html">Voet</a>
+               </div>
+                
+                <a style="border:2px solid black; color:red;" href="https://amctheatres.workplace.com/profile.php?id=100093047487747" title="Contact Axel if you have any questions"><b>Contact</b><img src="workplace.jpg" alt="workplace logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                 
+            </div>
+        </p>
+        <h4 style="background-color: #000000;padding:10px;margin-top:-16px"><input style ="border:3px solid #E42B39" type="text" id="searchBar" placeholder="Search to highlight text" onkeyup="searchText()"></h4>
+        <p>Contest Ends January 1st, 2025</p>
+        <div id="content">
+            <!-- Moved table inside the #content div -->
+            <div class="tables">
+                <main>
+                    <div class="container">
+                        <!-- Table -->
+                        <table style="text-align: center;" class="table table-bordered border-danger table-striped">
+                            <thead style="text-decoration: underline" class="table-dark" id="table-head"></thead>
+                            <tbody id="table-body"></tbody>
+                        </table>
+                        <!-- Table -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    
+     <!-- MDB UI KIT -->
+     <link rel="stylesheet" href="css/mdb.min.css" />
+     
+    
+     
+    
+      <!--Main layout-->
+  
+      <!--Footer-->
+      <footer></footer>
+      <!--Footer-->
+    </div>
+    </body>
+  
+    <!-- MDB ESSENTIAL -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Google API -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <!-- easyData -->
+    <script type="text/javascript" src="js/easyData-google-sheets.js"></script>
+  
+    <!-- easyData - Creating table -->
+    <script>
+      {
+        {
+          // Your API KEY
+          const API_KEY = "AIzaSyCdKpg0Gycy5xziEoHL7kYH3c3H96BXPDI";
+  
+          function displayResult2(response) {
+            let tableHead = "";
+            let tableBody = "";
+  
+            response.result.values.forEach((row, index) => {
+              if (index === 0) {
+                tableHead += "<tr>";
+                row.forEach((val) => (tableHead += "<th>" + val + "</th>"));
+                tableHead += "</tr>";
+              } else {
+                tableBody += "<tr>";
+                row.forEach((val) => (tableBody += "<td>" + val + "</td>"));
+                tableBody += "</tr>";
+              }
+            });
+  
+            document.getElementById("table-head").innerHTML = tableHead;
+            document.getElementById("table-body").innerHTML = tableBody;
+          }
+  
+          function loadData() {
+            // Spreadsheet ID
+            const spreadsheetId = "1nfHT88rCCUw5-qrD3A_HBrB9mzkBrkGPsfaEyoL_9ng";
+            const range = "A:Z";
+            getPublicValues({ spreadsheetId, range }, displayResult2);
+          }
+  
+          window.addEventListener("load", (e) => {
+            initOAuthClient({ apiKey: API_KEY });
+          });
+  
+          document.addEventListener("gapi-loaded", (e) => {
+            loadData();
+          });
+        }
+      }
+    </script>
+    
+    
+</div>
+
+
+<script>
+    function searchText() {
+        // Get the search input value and content div
+        let input = document.getElementById('searchBar').value.trim();
+        let content = document.getElementById('content');
+
+        // Remove previous highlights
+        removeHighlights(content);
+
+        if (input === '') return; // Do nothing if input is empty
+
+        // Create a regular expression for the search term
+        let regex = new RegExp(`(${input})`, 'gi');
+
+        // Recursively highlight matches in text nodes
+        highlightMatches(content, regex);
+    }
+
+    function highlightMatches(node, regex) {
+        if (node.nodeType === Node.TEXT_NODE) { // Only process text nodes
+            let parent = node.parentNode;
+            if (regex.test(node.textContent)) {
+                // Replace matched text with highlighted spans
+                let newHTML = node.textContent.replace(regex, '<span class="highlight">$1</span>');
+                let tempDiv = document.createElement('div');
+                tempDiv.innerHTML = newHTML;
+
+                // Replace the text node with the new HTML nodes
+                while (tempDiv.firstChild) {
+                    parent.insertBefore(tempDiv.firstChild, node);
+                }
+                parent.removeChild(node);
+            }
+        } else if (node.nodeType === Node.ELEMENT_NODE && node.childNodes) {
+            node.childNodes.forEach(child => highlightMatches(child, regex));
+        }
+    }
+
+    function removeHighlights(container) {
+        let highlightedElements = container.querySelectorAll('.highlight');
+        highlightedElements.forEach(el => {
+            let parent = el.parentNode;
+            parent.replaceChild(document.createTextNode(el.textContent), el);
+            parent.normalize(); // Merge adjacent text nodes
+        });
+    }
+</script>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+
+</html>

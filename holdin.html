@@ -237,12 +237,101 @@
         .show {
             display: block;
         }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            
+        }
+
+            .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+            color: #6b6b6b;
+            }
+
+            .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            }
+
+            #main {
+            transition: margin-left .5s;
+            padding: 16px;
+            }
+
+            .logo img{
+                width: 100%;
+                height: fit-content;
+            }
+
+            @media screen and (min-height: 451px) {
+            .sidenav a {font-size: 20px;}
+            .sidenav {margin-bottom: 100px;}
+            }
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 50px;}
+            .sidenav a {font-size: 18px;}
+            }
     </style>
 </head>
 
 <body>
-    <h1><a href="info.html" style="background-color:inherit;color:inherit;padding:inherit;display:inherit;margin:inherit"><img src="info.png" alt="Info Button" style="position:absolute;width:30px;height:35px;margin-left:5px;margin-top:5px;margin-bottom:5px" title="Poster Rules and New Info"></a>Poster Requests</h1>
+    <h1><span onclick="openNav()" style="background-color:inherit;color:inherit;padding:inherit;display:inherit;margin:inherit;position:absolute;width:30px;height:35px;margin-left:5px;margin-top:-5px;margin-bottom:5px" title="Poster Rules and New Info"> &#9776;</span>Poster Requests</h1>
     <img src="amcbackground.jpg" alt="AMC Longview 10" width="720" height="1080">
+    <div id="mySidenav" class="sidenav">
+        <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br />
+        <div = "Poster-info">
+            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Poster/Website tools</u></b></h2>
+        </div>
+        <a style="background-color:#E42B39"href="info.html">Rules/website help</a>
+        <a style="background-color:#E42B39"href="inventory.html">Poster Inventory</a>
+        <div = "Theatre-info">
+            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Theatre Info</u></b></h2>
+        </div>
+        <a style="background-color:#E42B39"href="news.html">AMC News</a>
+        <a style="background-color:#E42B39"href="https://amc.cloud.infor.com/etm/">Workforce</a>
+        <a style="background-color:#E42B39"href="ScoreCard.html">ScoreCard</a>
+        <div = "Extra-info">
+            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Extras</u></b></h2>
+        </div>
+        <a style="background-color:#E42B39"href="contest.html">Contests</a>
+        <a style="background-color:#E42B39"href="https://amcgearstore.com/">AMC Gear Store</a>
+        <h2 style="background-color:inherit;font-size: large;text-align:center;color: #ffffff;"><b><u>Gear Store Password</u></b></h2>
+        <h4 style="background-color:inherit;font-size: medium;text-align:center;color: #ffffff;"><b>AMC_GearStore123</b></h4>
+        <div id="logo" class="logo">
+        <h2 style="background-color: inherit;padding:15px"><img src="amcLogoTwo.png"  alt="AMC Logo"></h2>
+        </div>
+      </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "50px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
     <div class="pages">
         <p>
             <div style="background-color: #E42B39" class="dropdown">
