@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC Poster Requests</title>
+    <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
+    <style>
+        body {
+            background-color: #787171;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: sans-serif; /* Set font to sans-serif */
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            border-bottom: 2px solid black;
+            background-color: #E42B39;
+            margin: 0;
+            padding-top: 2px;
+            padding-bottom: 5px;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+            background-color: #E42B39;
+            margin: 0;
+            padding: 0px;
+        }
+
+        a:link,
+        a:visited {
+            background-color: #ffffff;
+            color: red;
+            padding: 5px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        a:hover,
+        a:active {
+            background-color: lightgray;
+        }
+
+        .pages {
+            text-align: center;
+            margin: 0px 0;
+        }
+
+        .form {
+            width: 90%;
+            max-width: 950px;
+            margin: auto;
+            padding: 10px;
+            flex: 1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 1650px;
+            border: 0;
+        }
+
+        img {
+            width: 25%;
+            max-width: auto;
+            height: 0px;
+            display: block;
+            margin: 0px auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+                line-height: 50px;
+                margin: 0;
+                padding: 5px;
+            }
+
+            .backdrop img {
+                width: 100%;
+                height: 150px;
+            }
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: block;
+            position: relative;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: red;
+            padding: 6.6px 5px;
+            text-align: center;
+            border: 2px solid black;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0px;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:active {
+            background-color: lightgray;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            
+        }
+        
+		 .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+            .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            
+        }
+
+            .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+            color: #6b6b6b;
+            }
+
+            .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            }
+
+            #main {
+            transition: margin-left .5s;
+            padding: 16px;
+            }
+
+            .logo img{
+                width: 100%;
+                height: fit-content;
+            }
+
+            @media screen and (min-height: 451px) {
+            .sidenav a {font-size: 20px;}
+            .sidenav {margin-bottom: 100px;}
+            }
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 50px;}
+            .sidenav a {font-size: 18px;}
+            }
+    </style>
+</head>
+
+<body style ='background-color: #6b6b6b;'>
+        <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="addison.html">Addison</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="alexis.html">Alexis</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="ava.html">Ava</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="axel.html">Axel</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="blake.html">Blake</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="cally.html">Cally</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="cameron.html">Cameron</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="cindy.html">Cindy</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="corbin.html">Corbin</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="Elizabeth.html">Elizabeth</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="haden.html">Haden</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="heath.html">Heath</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="holdin.html">Holdin</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="jaiden.html">Jaiden</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="james.html">James</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="jordan.html">Jordan</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="kieran.html">Kieran</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="liyah.html">Liyah</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="madison.html">Madison</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="michael kirkman.html">Michael Kirkman</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="michael mahana.html">Michael Mahana</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="paul.html">Paul</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="pj.html">PJ</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="presleigh.html">Presleigh</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="sean.html">Sean</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;'href="taylor.html">Taylor</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;'href="tyler.html">Tyler</a>
+       <a style = 'background-color: inherit; color: yellow; font-size: x-large;' href="voet.html">Voet</a>
+
+                
+               
+    
+
+    
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
