@@ -23,8 +23,7 @@
             border-bottom: 2px solid black;
             background-color: #E42B39;
             margin: 0;
-            padding-top: 2px;
-            padding-bottom: 5px;
+            padding: 5px;
         }
 
         p {
@@ -78,20 +77,100 @@
             display: block;
             margin: 0px auto;
         }
+        ul{
+                text-align:left;
+                list-style-position: inside;
+                text-indent: 30%;
+            }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 699px) {
             h1 {
                 font-size: 36px;
                 line-height: 50px;
-                margin: 0;
-                padding: 5px;
             }
 
-            .backdrop img {
+            img {
                 width: 100%;
                 height: 150px;
             }
+            ul{
+                text-align:left;
+                text-indent:-10%;
+                width:340px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:10px;
+                
+                
+            }
+            dl{
+                text-align:left;
+                text-indent:-10%;
+                width:340px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:10px;
         }
+    }
+            @media screen and (min-width:700px) {
+                
+                ul{
+                text-align:left;
+                text-indent:-2%;
+                width:650px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:24px;
+                padding-right:5px;
+                margin-left:60px;
+            }
+
+            dl{
+                text-align:left;
+                text-indent:-2%;
+                width:650px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:24px;
+                padding-right:5px;
+                margin-left:60px;
+        }
+    }
+
+        @media screen and (min-width:1000px) {
+                ul{
+                text-align:left;
+                text-indent:-4%;
+                width:850px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:510px;
+            }
+
+            dl{
+                text-align:left;
+                text-indent:-4%;
+                width:850px;
+                list-style-position: inside;
+                background-color:white;
+                border: 2px solid black;
+                padding-left:45px;
+                padding-right:5px;
+                margin-left:510px;
+            }
+        }
+        
 
         /* Dropdown styles */
         .dropdown {
@@ -140,9 +219,7 @@
 
         .show {
             display: block;
-        }
-
-            .sidenav {
+        }.sidenav {
             height: 100%;
             width: 0;
             position: fixed;
@@ -199,10 +276,8 @@
 </head>
 
 <body>
-    <h1><span onclick="openNav()" style="background-color:inherit;color:inherit;padding:inherit;display:inherit;margin:inherit;position:absolute;width:30px;height:35px;margin-left:5px;margin-top:-5px;margin-bottom:5px" title="Poster Rules and New Info"> &#9776;</span>Poster Requests</h1>
-    <h2 style ="text-align: center;background-color: lightskyblue;color: black;margin: 0px;padding: 5px;">Some Changes are being made for 2025, click the updates button to view</h2>
-    <h2 style ="text-align: center;background-color: lightskyblue;color: black;margin: 0px;padding: 5px;"><a style="color:blue; width:98px;border:2px solid black;height: 27px;" href="newYear.html" title="See whats new this year!;"><b>Updates</b></a></h2>
-    
+    <h1><span onclick="openNav()" style="background-color:inherit;color:inherit;padding:inherit;display:inherit;margin:inherit;position:absolute;width:30px;height:35px;margin-left:5px;margin-top:-5px;margin-bottom:5px" title="Poster Rules and New Info"> &#9776;</span>Upcoming changes for 2025</h1>
+    <img src="amcbackground.jpg" alt="AMC Longview 10" width="720" height="1080">
     <div id="mySidenav" class="sidenav">
         <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br />
@@ -220,8 +295,6 @@
         <a style="background-color:#E42B39"href="https://amc.cloud.infor.com/etm/">Workforce</a>
         <a style="background-color:#E42B39"href="https://www.amclearningstudio.com/Saba/Web_wdk/NA7P1PRD044/index/prelogin.rdf">Learning Studio</a>
         <a style="background-color:#E42B39"href="Crew Guide.pdf">Crew FAQ's</a>
-
-
         <div = "Extra-info">
             <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Extras</u></b></h2>
         </div>
@@ -244,14 +317,11 @@
           document.getElementById("main").style.marginLeft= "0";
         }
         </script>
-    <div id=backdrop class="backdrop">
-        <img src="amcbackground.jpg" alt="AMC Longview 10" width="720" height="1080">
-    </div>
     <div class="pages">
         <p>
             <div style="background-color: #E42B39" class="dropdown">
-                <a style="width:83px;border:2px solid black;height: 20px;" href="news.html" title="See whats new this week!"><b>AMC News</b></a>
-                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
+                <a style="width:70px;border:2px solid black" href="index.html" title="Go back to the home page"><b>Home</b><img src="home.png" alt="Home" style="float:right;width:20px;height:20px;margin-left:5px;margin-bottom:1px"></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px"></button>
                 <div style="background-color: #E42B39;position:absolute" id="myDropdown" class="dropdown-content">
                     <a href="addison.html">Addison</a>
                    <a href="alexis.html">Alexis</a>
@@ -283,18 +353,27 @@
                    <a href="voet.html">Voet</a>
                </div>
                 
-                <a style="border:2px solid black" href="https://amctheatres.workplace.com/profile.php?id=100093047487747" title="Contact Axel if you have any questions"><b>Contact</b><img src="workplace.jpg" alt="workplace logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                <a style="border:2px solid black" href="https://amctheatres.workplace.com/profile.php?id=100093047487747" title="Contact Axel if you have any questions"><b>Contact</b><img src="workplace.jpg" alt="workplace logo" style="float:right;width:20px;height:20px;margin-left:5px;margin-bottom:1px;"></a>
                  
             </div>
         </p>
     </div>
     
-
-    <div class="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzgK9ZQTUqcPcOOKulfdlgIWJ7c9PXZq9lj2oYjFJvnaQFCQ/viewform?embedded=true">
-            Loading…
-        </iframe>
-    </div>
+<div = "info page">
+    <h3 style ="text-align:center;background-color:gold;margin-top:0px;padding-top: 5px;">Changes go into effect January 10th 2025</h3>
+    <dl>
+        <dt><b>F&B</b></dt>
+        <dd>- Guests get popcorn salt when requested</dd>
+        <dd>- Refills use the same tub or bag and marked with an 'X' on bottom at time of refill</dd>
+        <dd>- Crew cannot damage out anything packaged or LTO for personal consumption and can only do personal damages once a week.</dd>
+        <dt><b>HR</b></dt>
+        <dd>- Associate of the Month/Quarter/Year will be making a return w/ requirement that name must be mentioned in a guest survey or to a manager by a guest during the month. (Nametags will help with this)</dd>
+        <dt><b>Misc.</b></dt>
+        <dd>- Crew needs to go through department managers with questions (i.e F&B questions to Travis, HR questions to Haden, Booth questions to Kieran) before asking James directly unless it is an immediate need.</dd>
+        <dd>- Ushers will be required to clean auditoriums until next pre-show unless multiple drops are occurring (i.e 12:00 drop, 12:05 drop, 12:15 drop, etc.)</dd>
+      </dl>
+</div>
+    
 
     <script>
         function myFunction() {
