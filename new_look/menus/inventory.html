@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC Poster Requests</title>
+    <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
+    <link rel="stylesheet" href="../../../css/new.web.css">
+</head>
+
+<style>
+    @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 26px;
+                line-height: 50px;
+                margin: 0;
+                padding: 0px;
+            }
+    }    
+    @media screen and (min-width: 200px) { /*old Phones */
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:53px;
+                height:40px;
+                right: 0px; /* Position the image 5px from the right edge */
+                top: 23px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }  
+            .invName{
+            font-weight: bold;
+            padding: 5px;
+    }
+    }
+    @media screen and (min-width: 400px) { /*new phones*/
+        .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:60px;
+                height:45px;
+                right: 0px; /* Position the image 5px from the right edge */
+                top: 23px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+            .invName{
+            font-weight: bold;
+    }
+    
+    }
+    @media screen and (min-width:500px) { /*landscaped older phones*/
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:53px;
+                height:40px;
+                right: 2px; /* Position the image 5px from the right edge */
+                top: 18px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+    }
+    @media screen and (min-width:600px) { /*landscaped older phones*/
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:53px;
+                height:40px;
+                right: 2px; /* Position the image 5px from the right edge */
+                top: 23px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+    }
+    @media screen and (min-width:700px) { /*landscaped older phones*/
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:60px;
+                height:45px;
+                right: 2px; /* Position the image 5px from the right edge */
+                top: 25px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+            .menu{
+                top: 7px;
+            }
+    }
+    @media screen and (min-width:1000px) {
+        .homebutton img {
+                background-color: inherit;
+                color: inherit;
+                padding: inherit;
+                display: inherit;
+                margin-top: -42px;
+                position: absolute;
+                width: 66px;
+                height: 50px;
+                right: 5px; /* Position the image 5px from the right edge */
+                top: 66px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+        }
+            .invName{
+            font-size:xx-large;
+            font-weight: bold;
+    }
+            .menu{
+                top: 7px;
+            }
+    }
+
+    
+</style>
+
+<body>
+    <h1 class ="invName"><span onclick="openNav()" class ="menu"style="display:inherit;position:absolute;width:30px;height:35px" title="SideMenu"> &#9776;</span>Poster Inventory<div class = "homebutton" id ="homebutton"><a style="all: inherit;" href="../index.html"><img src="../../images/amc_white.png" ></a></div></h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br>
+        <div = "Poster-info">
+            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Poster/Website tools</u></b></h2>
+        </div>
+        <a style="background-color:#b10221"href="info.html">Rules/website help</a>
+        <a style="background-color:#b10221"href="../../inventory.html">Poster Inventory</a>
+        <a style="background-color:#b10221"href="../../poster_images.html">Poster Images</a>
+        <div = "Theatre-info">
+            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Theatre Info</u></b></h2>
+        </div>
+        <a style="background-color:#b10221"href="../../news.html">AMC News</a>
+        <a style="background-color:#b10221"href="scorecard.html">ScoreCard</a>
+        <a style="background-color:#b10221"href="https://amc.cloud.infor.com/etm/">Workforce</a>
+        <a style="background-color:#b10221"href="https://www.amclearningstudio.com/Saba/Web_wdk/NA7P1PRD044/index/prelogin.rdf">Learning Studio</a>
+        <a style="background-color:#b10221"href="../../Crew Guide.pdf">Crew FAQ's</a>
+
+
+        <div = "Extra-info">
+            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Extras</u></b></h2>
+        </div>
+        <a style="background-color:#b10221"href="../contest.html">Contests</a>
+        <a style="background-color:#b10221"href="https://amcgearstore.com/">AMC Gear Store</a>
+        <h2 style="background-color:inherit;font-size: large;text-align:center;color: #ffffff;"><b><u>Gear Store Password</u></b></h2>
+        <h4 style="background-color:inherit;font-size: medium;text-align:center;color: #ffffff; margin-bottom: 0px;"><b>AMC_GearStore123</b></h4>
+        <div id="logo" class="logo">
+        <h4 style="background-color: inherit;padding:35px; margin-top: 0px; margin-bottom: 45px;"><img src="../../images/amcLogoTwo.png"  alt="AMC Logo"></h4>
+        </div>
+      </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "50px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+     <div class="pages">
+        <p>
+            <div style="background-image: url(../../../images/red.jpg);background-position: right center;margin-top:-25px" class="dropdown">
+                <a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px;color:red;padding-bottom: 7px;" href="../../news.html" title="See whats new this week!"><b>AMC News</b></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested" style="margin-bottom: 5px;"><b>View Requests</b></button>
+                <div style="background-color: #FF0042;position:absolute" id="myDropdown" class="dropdown-content">
+                    <a style="color:black" href="../../../addison.html">Addison</a>
+                   <a style="color:black" href="../../../alexis.html">Alexis</a>
+                   <a style="color:black" href="../../../ava.html">Ava</a>
+                   <a style="color:black" href="../../../axel.html">Axel</a>
+                   <a style="color:black" href="../../../blake.html">Blake</a>
+                   <a style="color:black" href="../../../cally.html">Cally</a>
+                   <a style="color:black" href="../../../cameron.html">Cameron</a>
+                   <a style="color:black" href="../../../cindy.html">Cindy</a>
+                   <a style="color:black" href="../../../corbin.html">Corbin</a>
+                   <a style="color:black" href="../../../Elizabeth.html">Elizabeth</a>
+                   <a style="color:black" href="../../../haden.html">Haden</a>
+                   <a style="color:black" href="../../../heath.html">Heath</a>
+                   <a style="color:black" href="../../../holdin.html">Holdin</a>
+                   <a style="color:black" href="../../../jaiden.html">Jaiden</a>
+                   <a style="color:black" href="../../../james.html">James</a>
+                   <a style="color:black" href="../../../kieran.html">Kieran</a>
+                   <a style="color:black" href="../../../liyah.html">Liyah</a>
+                   <a style="color:black" href="../../../madison.html">Madison</a>
+                   <a style="color:black" href="../../../michael kirkman.html">Michael Kirkman</a>
+                   <a style="color:black" href="../../../michael mahana.html">Michael Mahana</a>
+                   <a style="color:black" href="../../../paul.html">Paul</a>
+                   <a style="color:black" href="../../../pj.html">PJ</a>
+                   <a style="color:black" href="../../../presleigh.html">Presleigh</a>
+                   <a style="color:black" href="../../../sean.html">Sean</a>
+                   <a style="color:black" href="../../../taylor.html">Taylor</a>
+                   <a style="color:black" href="../../../tyler.html">Tyler</a>
+               </div>
+                
+                <a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px;color:red;padding-bottom: 7px;" href="../../poster_images.html" title="View Poster Images to see what they look like"><b>Poster Images</b></a>
+                 
+            </div>
+        </p>
+    </div>
+    
+    <h4 style="background-color: #000000;padding:10px;margin-top:-16px; display:flex;justify-content: center;"><input style ="border:3px solid #E42B39" type="text" id="searchBar" placeholder="Search Posters..." onkeyup="searchText()"></h4>
+    <h4 style = 'background-color: #000000;color:#ffffff;margin-top:-10px;text-align: center;'><u>Mobile Users</u><br>Move table side to side to view, Try landscaped for a wider view</h4>
+    <div id ="center">
+    <div id="content">
+        <!-- Moved table inside the #content div -->
+        <div class="tables">
+            <main>
+                <div class="container">
+                    <!-- Table -->
+                        <table class="table border-danger">
+                        <thead style="font-size:large;text-decoration: underline; background-color: white;color:black;" class="" id="table-head"></thead>
+                        <tbody id="table-body" style="background-color:black;color:white;"></tbody>
+                    </table>
+                    <!-- Table -->
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+ <!-- MDB UI KIT -->
+ <link rel="stylesheet" href="../../css/mdb.min.css" />
+ 
+
+ 
+
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer></footer>
+  <!--Footer-->
+</div>
+</body>
+
+<!-- MDB ESSENTIAL -->
+<script type="text/javascript" src="../../js/mdb.min.js"></script>
+<!-- Google API -->
+<script src="https://apis.google.com/js/api.js"></script>
+<!-- easyData -->
+<script type="text/javascript" src="../../js/easyData-google-sheets.js"></script>
+
+<!-- easyData - Creating table -->
+<script>
+  {
+    {
+      // Your API KEY
+      const API_KEY = "AIzaSyCdKpg0Gycy5xziEoHL7kYH3c3H96BXPDI";
+
+      function displayResult2(response) {
+        let tableHead = "";
+        let tableBody = "";
+
+        response.result.values.forEach((row, index) => {
+          if (index === 0) {
+            tableHead += "<tr>";
+            row.forEach((val) => (tableHead += "<th>" + val + "</th>"));
+            tableHead += "</tr>";
+          } else {
+            tableBody += "<tr>";
+            row.forEach((val) => (tableBody += "<td>" + val + "</td>"));
+            tableBody += "</tr>";
+          }
+        });
+
+        document.getElementById("table-head").innerHTML = tableHead;
+        document.getElementById("table-body").innerHTML = tableBody;
+      }
+
+      function loadData() {
+        // Spreadsheet ID
+        const spreadsheetId = "1Oh4vvfWrFq2AO-aPNCUa1XoWnOBm37uY7-8lQRLh1z8";
+        const range = "A:Z";
+        getPublicValues({ spreadsheetId, range }, displayResult2);
+      }
+
+      window.addEventListener("load", (e) => {
+        initOAuthClient({ apiKey: API_KEY });
+      });
+
+      document.addEventListener("gapi-loaded", (e) => {
+        loadData();
+      });
+    }
+  }
+</script>
+
+
+</div>
+
+
+<script>
+function searchText() {
+    // Get the search input value and content div
+    let input = document.getElementById('searchBar').value.trim();
+    let content = document.getElementById('content');
+
+    // Remove previous highlights
+    removeHighlights(content);
+
+    if (input === '') return; // Do nothing if input is empty
+
+    // Create a regular expression for the search term
+    let regex = new RegExp(`(${input})`, 'gi');
+
+    // Recursively highlight matches in text nodes
+    highlightMatches(content, regex);
+}
+
+function highlightMatches(node, regex) {
+    if (node.nodeType === Node.TEXT_NODE) { // Only process text nodes
+        let parent = node.parentNode;
+        if (regex.test(node.textContent)) {
+            // Replace matched text with highlighted spans
+            let newHTML = node.textContent.replace(regex, '<span class="highlight">$1</span>');
+            let tempDiv = document.createElement('div');
+            tempDiv.innerHTML = newHTML;
+
+            // Replace the text node with the new HTML nodes
+            while (tempDiv.firstChild) {
+                parent.insertBefore(tempDiv.firstChild, node);
+            }
+            parent.removeChild(node);
+        }
+    } else if (node.nodeType === Node.ELEMENT_NODE && node.childNodes) {
+        node.childNodes.forEach(child => highlightMatches(child, regex));
+    }
+}
+
+function removeHighlights(container) {
+    let highlightedElements = container.querySelectorAll('.highlight');
+    highlightedElements.forEach(el => {
+        let parent = el.parentNode;
+        parent.replaceChild(document.createTextNode(el.textContent), el);
+        parent.normalize(); // Merge adjacent text nodes
+    });
+}
+</script>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
+
+</html>

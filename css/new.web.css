@@ -1,0 +1,768 @@
+
+        body {
+            background-image: url(../images/reel.jpg);
+            background-size: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: sans-serif; /* Set font to sans-serif */
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            border-bottom: 2px solid black;
+            background-image: url("../images/red.jpg");
+            background-position: right center;
+            margin: 0;
+            padding-top: 2px;
+            padding-bottom: 5px;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+            background-color: #E42B39;
+            margin: 0;
+            padding: 0px;
+        }
+
+        a:link,
+        a:visited {
+            background-color: #ffffff;
+            color: red;
+            padding: 5px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        a:hover,
+        a:active {
+            background-color: lightgray;
+        }
+
+        .pages {
+            text-align: center;
+            margin: 0px 0;
+        }
+
+        .form {
+            width: 90%;
+            max-width: 950px;
+            margin: auto;
+            padding: 10px;
+            flex: 1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 4150px;
+            border: 0;
+        }
+
+        img {
+            width: 25%;
+            max-width: auto;
+            height: 0px;
+            display: block;
+            margin: 0px auto;
+        }
+
+        table{
+            all:inherit;
+            max-width: 100%;
+            overflow-x: scroll;
+            text-align: center;
+            padding-left: 0%;
+            padding-right: 0%;
+            border:2px solid red;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        @media screen and (min-height: 451px) {
+            .sidenav a {font-size: 20px;}
+            .sidenav {margin-bottom: 100px;}
+            }
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 50px;}
+            .sidenav a {font-size: 18px;}
+            }
+            .highlight {
+            background-color: yellow;
+            color:black;
+        }
+
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 26px;
+                line-height: 50px;
+                margin: 0;
+                padding: 0px;
+            }
+
+            .backdrop img {
+                width: 100%;
+                height: 150px;
+            }
+
+            iframe {
+            width: 100%;
+            height: 6730px;
+            border: 0;
+        }
+        img {
+            width: 100%;
+            height: 150px;
+        }
+        ul{
+            text-align:left;
+            text-indent:-10%;
+            width:340px;
+            list-style-position: inside;
+            background-color:black;
+            color:white;
+            border: 2px solid #b10221;
+            border-radius: 10px;
+            padding-right:5px;
+            
+            
+        }
+        dl{
+            text-align:left;
+            text-indent:-10%;
+            width:340px;
+            list-style-position: inside;
+            background-color:black;
+            color:white;
+            border: 2px solid #b10221;
+            border-radius: 10px;
+            padding-left:45px;
+            padding-right:5px;
+    }
+        }
+
+
+        /* Dropdown styles */
+        .dropdown {
+            display: block;
+            position: relative;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: red;
+            padding: 6.6px 5px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0px;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:active {
+            background-color: lightgray;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            
+        }
+        
+		 .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+            .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            
+        }
+
+            .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+            color: #6b6b6b;
+            }
+
+            .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            }
+
+            #main {
+            transition: margin-left .5s;
+            padding: 16px;
+            }
+
+            .logo img{
+                width: 100%;
+                height: fit-content;
+            }
+
+            @media screen and (min-height: 451px) {
+            .sidenav a {font-size: 20px;}
+            .sidenav {margin-bottom: 100px;}
+            }
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 50px;}
+            .sidenav a {font-size: 18px;}
+            }
+            
+            text {
+                background-color: #b10221;
+                padding: 3px;
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+            text2 {
+                background-color: white;
+                padding: 10px;
+                border: 3px solid red;
+                border-radius: 10px;
+            }
+            @media screen and (min-width:200px){/*super small devices*/
+                .homebutton img{
+                    background-color:inherit;
+                    color:inherit;
+                    padding:inherit;
+                    display:inherit;
+                    margin:inherit;
+                    position:absolute;
+                    width:53px;
+                    height:40px;
+                    right: 0px; /* Position the image 5px from the right edge */
+                    top: 25px;   /* Vertically center the image */
+                    transform: translateY(-50%); /* Adjust to perfectly center the image */
+                }
+                .scorecard img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            @media screen and (min-width: 300px) { /*old Phones */
+            .requestlogo img{
+                width: 100%;
+                height: 100%;
+            }
+            .workplacelogo img{
+                width:175px;
+                height: fit-content;
+            }
+
+            h2{
+                font-size: 15px;
+            }
+
+            .newsbutton{
+            font-size:small;
+            width:70px;
+            border:2px solid white;
+        }
+            .contactbutton{
+                font-size:small;
+            }
+        .dropbtn{
+            font-size: small;
+            width: max-content;
+            padding: 5px;
+            padding-bottom: 8px;
+        }
+
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:53px;
+                height:40px;
+                right: 0px; /* Position the image 5px from the right edge */
+                top: 25px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+            .menu{
+            margin-left:0px;
+            margin-top:0px;
+            margin-bottom:0px;
+        }
+        iframe {
+            width: 100%;
+            height: 6740px;
+            border: 0;
+        }
+        .scorecard img{
+            width: 100%;
+            height: 100%;
+        }
+            
+    }
+    @media screen and (min-width: 360px) { /*old Phones */
+            .requestlogo img{
+                width: 100%;
+                height: 100%;
+            }
+            .workplacelogo img{
+                width:175px;
+                height: fit-content;
+            }
+
+            h2{
+                font-size: 17px;
+            }
+
+            .newsbutton{
+            font-size:12px;
+            width:65px;
+            border:2px solid white;
+        }
+            .contactbutton{
+                font-size:12px;
+            }
+        .dropbtn{
+            font-size: 12px;
+            width: max-content;
+            padding: 5px;
+            padding-bottom: 8px;
+        }
+
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:53px;
+                height:40px;
+                right: 0px; /* Position the image 5px from the right edge */
+                top: 25px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+            .menu{
+            margin-left:0px;
+            margin-top:0px;
+            margin-bottom:0px;
+        }
+        iframe {
+            width: 100%;
+            height: 6810px;
+            border: 0;
+        }
+        .scorecard img{
+            width: 100%;
+            height: 100%;
+        }
+            
+    }
+            @media screen and (min-width: 400px) { /*new phones*/
+            .requestlogo img{
+                width: 100%;
+                height: 100%;
+            }
+            .workplacelogo img{
+                width:205px;
+                height: fit-content;
+            }
+
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:60px;
+                height:45px;
+                right: 0px; /* Position the image 5px from the right edge */
+                top: 25px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+
+            h2{
+                font-size: 20px;
+            }
+            .newsbutton{
+            font-size:12px;
+            width:65px;
+            border:2px solid white;
+        }
+            .contactbutton{
+                font-size:12px;
+            }
+        .dropbtn{
+            font-size: 12px;
+            width: max-content;
+            padding: 5px;
+            padding-bottom: 7px;
+        }
+        .menu{
+            margin-left:0px;
+            margin-top:0px;
+            margin-bottom:0px;
+        }
+        ul{
+            text-align:left;
+            text-indent:-10%;
+            width:340px;
+            list-style-position: inside;
+            background-color:black;
+            color:white;
+            border: 2px solid #b10221;
+            border-radius: 10px;
+            padding-right:5px;
+            
+            
+        }
+        dl{
+            text-align:left;
+            text-indent:-10%;
+            width:340px;
+            list-style-position: inside;
+            background-color:black;
+            color:white;
+            border: 2px solid #b10221;
+            border-radius: 10px;
+            padding-left:45px;
+            padding-right:5px;
+    }
+    .scorecard img{
+        width: 100%;
+        height: 100%;
+    }
+    }
+
+            @media screen and (min-width:600px) { /*landscaped older phones*/
+                .requestlogo img{
+                    width: 400px;
+                    height: 400px;
+            }
+            .workplacelogo img{
+                width:235px;
+                height: fit-content;
+            }
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:53px;
+                height:40px;
+                right: 2px; /* Position the image 5px from the right edge */
+                top: 23px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+
+            .newsbutton{
+            font-size:medium;
+            width:83px;
+            border:2px solid white;
+        }
+            .contactbutton{
+                font-size:medium;
+            }
+        .dropbtn{
+            font-size: medium;
+            width: max-content;
+            padding: 5px;
+            padding-bottom: 7px;
+        }
+        .menu{
+            margin-left:0px;
+            margin-top:0px;
+            margin-bottom:0px;
+        }
+        iframe {
+            width: 100%;
+            height: 6630px;
+            border: 0;
+        }
+        .scorecard img{
+            width: 70%;
+            height: 70%;
+        }
+
+        }
+           @media screen and (min-width:700px) { /*landscaped newer phones*/
+            .requestlogo img{
+                width: 500px;
+                height: fit-content;
+            }
+            .workplacelogo img{
+                width:255px;
+                height: fit-content;
+            }
+
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:53px;
+                height:40px;
+                right: 5px; /* Position the image 5px from the right edge */
+                top: 23px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+            .newsbutton{
+            font-size:medium;
+            width:83px;
+            border:2px solid white;
+        }
+            .contactbutton{
+                font-size:medium;
+            }
+        .dropbtn{
+            font-size: medium;
+            width: max-content;
+            padding: 5px;
+            padding-bottom: 7px;
+        }
+        iframe {
+            width: 100%;
+            height: 4190px;
+            border: 0;
+        }
+        ul{
+            text-align:left;
+            text-indent:-2%;
+            width:650px;
+            list-style-position: inside;
+            background-color:black;
+            color:white;
+            border: 2px solid #b10221;
+            border-radius: 10px;
+            padding-left:24px;
+            padding-right:5px;
+        }
+
+        dl{
+            text-align:left;
+            text-indent:-2%;
+            width:650px;
+            list-style-position: inside;
+            background-color:black;
+            color:white;
+            border: 2px solid #b10221;
+            border-radius: 10px;
+            padding-left:24px;
+            padding-right:5px;
+    }
+        .scorecard img{
+            width: 70%;
+            height: 70%;
+    }
+        }
+        @media screen and (min-width:800px){
+            .newsbutton{
+            font-size:medium;
+            width:83px;
+            border:2px solid white;
+        }
+            .contactbutton{
+                font-size:medium;
+            }
+        .dropbtn{
+            font-size: medium;
+            width: max-content;
+            padding: 5px;
+            padding-bottom: 7px;
+        }
+        .menu{
+            margin-left:0px;
+            margin-top:-3px;
+            margin-bottom:0px;
+        }
+        .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:53px;
+                height:40px;
+                right: 5px; /* Position the image 5px from the right edge */
+                top: 23px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+        }
+        @media screen and (min-width:900px) {
+            .requestlogo img{
+                width: 500px;
+                height: fit-content;
+            }
+            .workplacelogo img{
+                width:295px;
+                height: fit-content;
+            }
+
+            .homebutton img{
+                background-color:inherit;
+                color:inherit;
+                padding:inherit;
+                display:inherit;
+                margin:inherit;
+                position:absolute;
+                width:66px;
+                height:50px;
+                right: 2px; /* Position the image 5px from the right edge */
+                top: 23px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+            }
+            .newsbutton{
+            font-size:medium;
+            width:83px;
+            border:2px solid white;
+        }
+            .contactbutton{
+                font-size:medium;
+            }
+        .dropbtn{
+            font-size: medium;
+            width: max-content;
+            padding: 5px;
+            padding-bottom: 7px;
+        }
+        .menu{
+            margin-left:5px;
+            margin-top:-5px;
+            margin-bottom:0px;
+        }
+        .scorecard img{
+            width: 70%;
+            height: 70%;
+        }
+        }
+
+
+        @media screen and (min-width:1000px) {
+            .requestlogo img{
+                width: 500px;
+                height: fit-content;
+            }
+            .workplacelogo img{
+                width:295px;
+                height: fit-content;
+            }
+            .homebutton img {
+                background-color: inherit;
+                color: inherit;
+                padding: inherit;
+                display: inherit;
+                margin-top: -42px;
+                position: absolute;
+                width: 66px;
+                height: 50px;
+                right: 5px; /* Position the image 5px from the right edge */
+                top: 64px;   /* Vertically center the image */
+                transform: translateY(-50%); /* Adjust to perfectly center the image */
+    }
+            .newsbutton{
+                font-size:medium;
+                width:83px;
+                border:2px solid white;
+         }
+            .contactbutton{
+                font-size:medium;
+            }
+        .dropbtn{
+            font-size: medium;
+            width: max-content;
+            padding: 5px;
+            padding-bottom: 7px;
+         }
+        .menu{
+            margin-left:5px;
+            margin-top:-5px;
+            margin-bottom:0px;
+        }
+        ul{
+            text-align:left;
+            text-indent:-4%;
+            width:850px;
+            list-style-position: inside;
+            background-color:black;
+            color:white;
+            border: 2px solid #b10221;
+            border-radius: 10px;
+            padding-left:45px;
+            padding-right:5px;
+            align-items: center;
+        }
+
+        dl{
+            text-align:left;
+            text-indent:-4%;
+            width:850px;
+            list-style-position: inside;
+            background-color:black;
+            color:white;
+            border: 2px solid #b10221;
+            border-radius: 10px;
+            padding-left:45px;
+            padding-right:5px;
+        }
+        table{
+            all:inherit;
+            max-width: 80%;
+            overflow-x: scroll;
+            text-align: center;
+            padding-left: 0%;
+            padding-right: 0%;
+            border:2px solid red;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .scorecard img{
+            width: 50%;
+            height: 50%;
+        }
+    }
