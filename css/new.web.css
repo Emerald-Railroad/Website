@@ -288,8 +288,8 @@
                 height: 100%;
             }
             .workplacelogo img{
-                width:175px;
-                height: fit-content;
+                width:60%;
+                height: 60%;
             }
 
             h2{
@@ -346,8 +346,8 @@
                 height: 100%;
             }
             .workplacelogo img{
-                width:175px;
-                height: fit-content;
+                width:60%;
+                height: 60%;
             }
 
             h2{
@@ -389,7 +389,7 @@
         }
         iframe {
             width: 100%;
-            height: 6810px;
+            height: 6490px;
             border: 0;
         }
         .scorecard img{
@@ -404,8 +404,8 @@
                 height: 100%;
             }
             .workplacelogo img{
-                width:205px;
-                height: fit-content;
+                width:60%;
+                height: 60%;
             }
 
             .homebutton img{
@@ -473,6 +473,11 @@
         width: 100%;
         height: 100%;
     }
+    iframe {
+        width: 100%;
+        height: 6450px;
+        border: 0;
+    }
     }
 
             @media screen and (min-width:600px) { /*landscaped older phones*/
@@ -481,8 +486,8 @@
                     height: 400px;
             }
             .workplacelogo img{
-                width:235px;
-                height: fit-content;
+                width:40%;
+                height: 40%;
             }
             .homebutton img{
                 background-color:inherit;
@@ -519,7 +524,7 @@
         }
         iframe {
             width: 100%;
-            height: 6630px;
+            height: 6300px;
             border: 0;
         }
         .scorecard img{
@@ -530,12 +535,12 @@
         }
            @media screen and (min-width:700px) { /*landscaped newer phones*/
             .requestlogo img{
-                width: 500px;
-                height: fit-content;
+                width:80%;
+                height: 80%;
             }
             .workplacelogo img{
-                width:255px;
-                height: fit-content;
+                width:45%;
+                height: 45%;
             }
 
             .homebutton img{
