@@ -6,231 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMC Poster Requests</title>
     <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
-    <style>
-        body {
-            background-color: #787171;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            font-family: sans-serif; /* Set font to sans-serif */
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-            border-bottom: 2px solid black;
-            background-color: #E42B39;
-            margin: 0;
-            padding-top: 2px;
-            padding-bottom: 5px;
-        }
-
-        p {
-            text-align: center;
-            color: white;
-            border: 1px solid black;
-            background-color: #E42B39;
-            margin: 0;
-            padding: 0px;
-        }
-
-        a:link,
-        a:visited {
-            background-color: #ffffff;
-            color: red;
-            padding: 5px 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            margin: 5px;
-        }
-
-        a:hover,
-        a:active {
-            background-color: lightgray;
-        }
-
-        .pages {
-            text-align: center;
-            margin: 0px 0;
-        }
-
-        .form {
-            width: 90%;
-            max-width: 950px;
-            margin: auto;
-            padding: 10px;
-            flex: 1;
-        }
-
-        iframe {
-            width: 100%;
-            height: 1650px;
-            border: 0;
-        }
-
-        img {
-            width: 25%;
-            max-width: auto;
-            height: 0px;
-            display: block;
-            margin: 0px auto;
-        }
-
-        @media screen and (max-width: 600px) {
-            h1 {
-                font-size: 36px;
-                line-height: 50px;
-                margin: 0;
-                padding: 5px;
-            }
-
-            .backdrop img {
-                width: 100%;
-                height: 150px;
-            }
-        }
-
-        /* Dropdown styles */
-        .dropdown {
-            display: block;
-            position: relative;
-        }
-
-        .dropbtn {
-            background-color: white;
-            color: red;
-            padding: 6.6px 5px;
-            text-align: center;
-            border: 2px solid black;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin: 0px;
-        }
-
-        .dropbtn:hover,
-        .dropbtn:active {
-            background-color: lightgray;
-        }
-
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 200px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            
-        }
-        
-		 .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .show {
-            display: block;
-        }
-
-            .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-            
-        }
-
-            .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #ffffff;
-            display: block;
-            transition: 0.3s;
-            }
-
-            .sidenav a:hover {
-            color: #6b6b6b;
-            }
-
-            .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-            }
-
-            #main {
-            transition: margin-left .5s;
-            padding: 16px;
-            }
-
-            .logo img{
-                width: 100%;
-                height: fit-content;
-            }
-
-            @media screen and (min-height: 451px) {
-            .sidenav a {font-size: 20px;}
-            .sidenav {margin-bottom: 100px;}
-            }
-            @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 50px;}
-            .sidenav a {font-size: 18px;}
-            }
-    </style>
+    <link rel="stylesheet" href="../css/new.web.css">
 </head>
 
 <body>
-    <h1><span onclick="openNav()" style="background-color:inherit;color:inherit;padding:inherit;display:inherit;margin:inherit;position:absolute;width:30px;height:35px;margin-left:5px;margin-top:-5px;margin-bottom:5px" title="Poster Rules and New Info"> &#9776;</span>Poster Requests</h1>
-    <h2 style ="text-align: center;background-color: lightskyblue;color: black;margin: 0px;padding: 5px;">Some Changes are being made for 2025, click the updates button to view</h2>
-    <h2 style ="text-align: center;background-color: lightskyblue;color: black;margin: 0px;padding: 5px;"><a style="color:blue; width:98px;border:2px solid black;height: 27px;" href="newYear.html" title="See whats new this year!"><b>Updates</b></a></h2>
-    
+    <h1><span onclick="openNav()" class ="menu"style="display:inherit;position:absolute;width:30px;height:35px;" title="Poster Rules and New Info"> &#9776;</span>Longview 10 <div class = "homebutton" id ="homebutton"><a style="all: inherit;" href="index.html"><img src="../images/amc_white.png" ></a></div></h1></h1>
+    <div style ="background: url(../images/amcbackground.jpg) center no-repeat, url(../images/theatre.png) center right;background-size: 1000px;" alt="AMC Longview 10">
+    <br></br>
+    <br></br>
+    <br></br>
+    <!-- <h2 style ="text-align: center;color: blue;margin: 0px;padding: 5px;"><a style="color:blue; width:244px;border:2px solid black;height: 20px;font-size: large;border-radius: 20px;" href="../newYear.html" title="See whats new this year!;"><b>View New Changes for 2025!</b></a></h2> -->
+    </div>
     <div id="mySidenav" class="sidenav">
         <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br />
         <div = "Poster-info">
             <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Poster/Website tools</u></b></h2>
         </div>
-        <a style="background-color:#E42B39"href="info.html">Rules/website help</a>
-        <a style="background-color:#E42B39"href="inventory.html">Poster Inventory</a>
-        <a style="background-color:#E42B39"href="poster_images.html">Poster Images</a>
+        <a style="background-color:#b10221"href="new_look/menus/info.html">Rules/website help &nbsp;</a>
+        <a style="background-color:#b10221"href="new_look/menus/inventory.html">Poster Inventory &nbsp;</a>
+        <a style="background-color:#b10221"href="new_look/menus/poster_images.html">Poster Images &nbsp;</a>
         <div = "Theatre-info">
             <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Theatre Info</u></b></h2>
         </div>
-        <a style="background-color:#E42B39"href="new_look/menus/news.html">AMC News</a>
-        <a style="background-color:#E42B39"href="ScoreCard.html">ScoreCard</a>
-        <a style="background-color:#E42B39"href="https://amc.cloud.infor.com/etm/">Workforce</a>
-        <a style="background-color:#E42B39"href="https://www.amclearningstudio.com/Saba/Web_wdk/NA7P1PRD044/index/prelogin.rdf">Learning Studio</a>
-        <a style="background-color:#E42B39"href="Crew Guide.pdf">Crew FAQ's</a>
+        <a style="background-color:#b10221"href="new_look/menus/AMC News/CurrentNews.html">AMC News &nbsp; </a>
+        <a style="background-color:#b10221"href="new_look/menus/scorecard.html">ScoreCard &nbsp;</a>
+        <a style="background-color:#b10221"href="https://amc.cloud.infor.com/etm/">Workforce &nbsp;</a>
+        <a style="background-color:#b10221"href="https://www.amclearningstudio.com/Saba/Web_wdk/NA7P1PRD044/index/prelogin.rdf">Learning Studio &nbsp;</a>
+        <a style="background-color:#b10221"href="new_look/menus/Crew Guide.pdf">Crew FAQ's &nbsp;</a>
 
 
         <div = "Extra-info">
             <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Extras</u></b></h2>
         </div>
-        <a style="background-color:#E42B39"href="contest.html">Contests</a>
-        <a style="background-color:#E42B39"href="https://amcgearstore.com/">AMC Gear Store</a>
+        <a style="background-color:#b10221"href="https://www.amctheatres.com/">Official AMC Site &nbsp;</a>
+        <a style="background-color:#b10221"href="https://amctheatresshop.com/?utm_medium=website&utm_source=amc&utm_campaign=merchandise&utm_term=global_nav&utm_uid=merch">AMC Movie Merch &nbsp;</a>
+        <a style="background-color:#b10221"href="https://amcgearstore.com/">AMC Gear Store &nbsp;</a>
         <h2 style="background-color:inherit;font-size: large;text-align:center;color: #ffffff;"><b><u>Gear Store Password</u></b></h2>
-        <h4 style="background-color:inherit;font-size: medium;text-align:center;color: #ffffff;"><b>AMC_GearStore123</b></h4>
+        <h4 style="background-color:inherit;font-size: medium;text-align:center;color: #ffffff; margin-bottom: 0px;"><b>AMC_GearStore123</b></h4>
         <div id="logo" class="logo">
-        <h2 style="background-color: inherit;padding:15px"><img src="amcLogoTwo.png"  alt="AMC Logo"></h2>
+        <h4 style="background-color: inherit;padding:35px; margin-top: 0px; margin-bottom: 45px;"><img src="images/amcLogoTwo.png"  alt="AMC Logo"></h4>
         </div>
       </div>
     <script>
@@ -244,59 +59,112 @@
           document.getElementById("main").style.marginLeft= "0";
         }
         </script>
-    <div id=backdrop class="backdrop">
-        <img src="amcbackground.jpg" alt="AMC Longview 10" width="720" height="1080">
-    </div>
+
     <div class="pages">
         <p>
-            <div style="background-color: #E42B39" class="dropdown">
-                <a style="width:83px;border:2px solid black;height: 20px;" href="new_look/menus/news.html" title="See whats new this week!"><b>AMC News</b></a>
-                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
-                <div style="background-color: #E42B39;position:absolute" id="myDropdown" class="dropdown-content">
-                    <a href="addison.html">Addison</a>
-                   <a href="alexis.html">Alexis</a>
-                   <a href="ava.html">Ava</a>
-                   <a href="axel.html">Axel</a>
-                   <a href="blake.html">Blake</a>
-                   <a href="cally.html">Cally</a>
-                   <a href="cameron.html">Cameron</a>
-                   <a href="cindy.html">Cindy</a>
-                   <a href="corbin.html">Corbin</a>
-                   <a href="Elizabeth.html">Elizabeth</a>
-                   <a href="heath.html">Heath</a>
-                   <a href="holdin.html">Holdin</a>
-                   <a href="hunter.html">Hunter</a>
-                   <a href="jaiden.html">Jaiden</a>
-                   <a href="james.html">James</a>
-                   <a href="kieran.html">Kieran</a>
-                   <a href="liyah.html">Liyah</a>
-                   <a href="madison.html">Madison</a>
-                   <a href="michael kirkman.html">Michael Kirkman</a>
-                   <a href="michael mahana.html">Michael Mahana</a>
-                   <a href="paul.html">Paul</a>
-                   <a href="pj.html">PJ</a>
-                   <a href="sean bumbard.html">Sean Bumbard</a>
-                   <a href="sean rackley.html">Sean Rackley</a>
-                   <a href="taylor.html">Taylor</a>
-                   <a href="travis.html">Travis</a>
-                   <a href="tyler.html">Tyler</a>
+            <div style="background-image: url(../images/red.jpg);background-position: right center;" class="dropdown">
+                <a id="newsbutton" class ="newsbutton" style="border:2px solid black;height: 20px;border-radius: 10px;" href="new_look/menus/AMC News/CurrentNews.html" title="See whats new this week!"><b>AMC News</b></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="images/request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
+                <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;" id="myDropdown" class="dropdown-content">
+                    <div style ="font-weight: bold;">
+                    <a style ="color:#E42B39"href="new_look/crew/addison.html">Addison</a>
+                   <a style ="color:#E42B39" href="new_look/crew/alexis.html">Alexis</a>
+                   <a style ="color:#E42B39" href="new_look/crew/ava.html">Ava</a>
+                   <a style ="color:#E42B39" href="new_look/crew/axel.html">Axel</a>
+                   <a style ="color:#E42B39" href="new_look/crew/blake.html">Blake</a>
+                   <a style ="color:#E42B39" href="new_look/crew/cally.html">Cally</a>
+                   <a style ="color:#E42B39" href="new_look/crew/cameron.html">Cameron</a>
+                   <a style ="color:#E42B39" href="new_look/crew/cindy.html">Cindy</a>
+                   <a style ="color:#E42B39" href="new_look/crew/corbin.html">Corbin</a>
+                   <a style ="color:#E42B39" href="new_look/crew/elizabeth.html">Elizabeth</a>
+                   <a style ="color:#E42B39" href="new_look/crew/heath.html">Heath</a>
+                   <a style ="color:#E42B39" href="new_look/crew/holdin.html">Holdin</a>
+                   <a style ="color:#E42B39" href="new_look/crew/hunter.html">Hunter</a>
+                   <a style ="color:#E42B39" href="new_look/crew/jaiden.html">Jaiden</a>
+                   <a style ="color:#E42B39" href="new_look/crew/james.html">James</a>
+                   <a style ="color:#E42B39" href="new_look/crew/kieran.html">Kieran</a>
+                   <a style ="color:#E42B39" href="new_look/crew/liyah.html">Liyah</a>
+                   <a style ="color:#E42B39" href="new_look/crew/madison.html">Madison</a>
+                   <a style ="color:#E42B39" href="new_look/crew/michael kirkman.html">Michael Kirkman</a>
+                   <a style ="color:#E42B39" href="new_look/crew/michael mahana.html">Michael Mahana</a>
+                   <a style ="color:#E42B39" href="new_look/crew/paul.html">Paul</a>
+                   <a style ="color:#E42B39" href="new_look/crew/pj.html">PJ</a>
+                   <a style ="color:#E42B39" href="new_look/crew/sean bumbard.html">Sean Bumbard</a>
+                   <a style ="color:#E42B39" href="new_look/crew/sean rackley.html">Sean Rackley</a>
+                   <a style ="color:#E42B39" href="new_look/crew/taylor.html">Taylor</a>
+                   <a style ="color:#E42B39" href="new_look/crew/travis.html">Travis</a>
+                   <a style ="color:#E42B39" href="new_look/crew/tyler.html">Tyler</a>
+                </div>
                </div>
                 
-                <a style="border:2px solid black" href="https://amctheatres.workplace.com/profile.php?id=100093047487747" title="Contact Axel if you have any questions"><b>Contact</b><img src="workplace.jpg" alt="workplace logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                <a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px" href="https://amctheatres.workplace.com/profile.php?id=100093047487747" title="Contact Axel if you have any questions"><b>Contact</b><img src="images/workplace.jpg" alt="workplace logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
                  
             </div>
         </p>
     </div>
     
-    <div "New_look_Button">
-        <h2 style ="text-align: center;padding: 5px;"><p style = "background-color: inherit; border: inherit;">Want a sneak peek of the upcoming new look for the website?<br>click apply changes to view the experimental version!</p><a style="background-color:#B10221; color:white; width:132px;border:2px solid black;height: 20px; font-size: large;border-radius: 10px;" href="new_look/index.html" title="Check out the Experimental New look for the website"><b>Apply Changes</b></a></h2>
+    <div "Old_look_Button">
+        <h2 style ="text-align: center;padding: 5px;"><p style = "background-color: inherit; border: inherit;">Version 7 is finally here!<br>Welcome to the new official look of the website<br><p style="color: lightskyblue;background-color: inherit;font-size: medium;border: none;">Click Review Changes to see the changelog of what is new on the website.</p><a style="background-color:white; color:red; width:144px;border:3px solid black;height: 20px; font-size: large;border-radius: 10px;" href="new_look/changelog.html" title="View what is new"><b>Review Changes</b></a></h2>
     </div>
 
-    <div class="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzgK9ZQTUqcPcOOKulfdlgIWJ7c9PXZq9lj2oYjFJvnaQFCQ/viewform?embedded=true">
-            Loading…
-        </iframe>
+    <div class="home">
+       <h2 style ="color: white;text-align: center;position: relative;align-items: center;"><div style ="display:flex;align-items: cetner;justify-content: center;"><text>Welcome to the Breakroom Website!</text></div></h2>
     </div>
+
+    <div "requests">
+        <h2 style ="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;"><tex>Request a Movie Poster</tex></h2>
+        <hr style ="margin-top: 0px;margin-bottom: 0px;">
+        <div id="requestlogo" class="requestlogo">
+            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a href ="new_look/home_page_links/poster_request.html" style ="all: inherit;"><img src="../images/poster_request_logo.png" alt="AMC Poster Logo"></a></h2>
+            </div>
+
+            <h4 style = "color: White; text-align: center;margin-top: -55px;">Click image above to visit the poster request form.</h4>
+
+    </div>
+
+    <div "Workplace">
+        <h2 style ="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;"><tex>Chat & Explore Workplace!</tex></h2>
+        <hr style ="margin-top: 0px;margin-bottom: 0px;border-color:#4426C4">
+        <div id="workplacelogo" class="workplacelogo">
+            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a href ="https://amctheatres.workplace.com/" style ="all: inherit;"><img style = "border-radius: 15px;" src="../images/workplace.jpg" alt="AMC Workplace Logo"></a></h2>
+            </div>
+            <h4 style = "color: White; text-align: center;margin-top: -55px;">Click image above to visit workplace.</h4>
+
+    </div>
+    <div "Workforce">
+        <h2 style ="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;"><tex>Workforce!</tex></h2>
+        <hr style ="margin-top: 0px;margin-bottom: 0px;border-color:red">
+        <div id="workplacelogo" class="workplacelogo">
+            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a href ="https://amc.cloud.infor.com/etm/" style ="all: inherit;"><img style = "border-radius: 15px;" src="../images/workforce.png" alt="Workforce Logo"></a></h2>
+            </div>
+
+            <h4 style = "color: White; text-align: center;margin-top: -55px;">Click image above to visit workforce.</h4>
+
+    </div>
+    <div "Learning_Studio">
+        <h2 style ="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;"><tex>Learning Studio!</tex></h2>
+        <hr style ="margin-top: 0px;margin-bottom: 0px;border-color:white">
+        <div id="workplacelogo" class="workplacelogo">
+            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a href ="https://www.amclearningstudio.com/" style ="all: inherit;"><img style = "border-radius: 15px" src="../images/learning.png" alt="Learning Studio Logo"></a></h2>
+            </div>
+
+            <h4 style = "color: White; text-align: center;margin-top: -55px;">Click image above to visit Learning Studios.</h4>
+
+    </div>
+    <div "Review">
+        <h2 style ="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;"><tex>Want to help the site Improve?</tex></h2>
+        <hr style ="margin-top: 0px;margin-bottom: 0px;border-color:white">
+        <div id="workplacelogo" class="workplacelogo">
+            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a href ="new_look/home_page_links/review.html" style ="all: inherit;"><img src="../images/review.png" alt="Leave A Review!"></a></h2>
+            </div>
+
+            <h4 style = "color: White; text-align: center;margin-top: -55px;">Click image above to Leave a Review.</h4>
+
+    </div>
+    <h5 style ="text-align: center;color: white">Check out the menu button for more features</h5>
+    <br>
+    <h6 style="text-align: center;color: #6b6b6b;">Created by Axel Menges</h6>
+    
 
     <script>
         function myFunction() {
