@@ -76,33 +76,13 @@
     <div id="mySidenav" class="sidenav">
         <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br />
-        <div = "Poster-info">
-            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Poster/Website tools</u></b></h2>
-        </div>
-        <a style="background-color:#b10221"href="../menus/info.html">Rules/website help &nbsp;</a>
-        <a style="background-color:#b10221"href="../menus/inventory.html">Poster Inventory &nbsp;</a>
-        <a style="background-color:#b10221"href="../menus/poster_images.html">Poster Images &nbsp;</a>
-        <div = "Theatre-info">
-            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Theatre Info</u></b></h2>
-        </div>
-        <a style="background-color:#b10221"href="../menus/AMC News/CurrentNews.html">AMC News &nbsp; </a>
-        <a style="background-color:#b10221"href="../menus/scorecard.html">ScoreCard &nbsp;</a>
-        <a style="background-color:#b10221"href="https://amc.cloud.infor.com/etm/">Workforce &nbsp;</a>
-        <a style="background-color:#b10221"href="https://www.amclearningstudio.com/Saba/Web_wdk/NA7P1PRD044/index/prelogin.rdf">Learning Studio &nbsp;</a>
-        <a style="background-color:#b10221"href="../menus/Crew Guide.pdf">Crew FAQ's &nbsp;</a>
+        <div id="Menu_Buttons" "Website_Menu"></div>
 
-
-        <div = "Extra-info">
-            <h2 style="background-color:inherit;font-size: x-large;text-align:center;color: #ffffff;"><b><u>Extras</u></b></h2>
-        </div>
-        <a style="background-color:#b10221"href="https://www.amctheatres.com/">Official AMC Site &nbsp;</a>
-        <a style="background-color:#b10221"href="https://amctheatresshop.com/?utm_medium=website&utm_source=amc&utm_campaign=merchandise&utm_term=global_nav&utm_uid=merch">AMC Movie Merch &nbsp;</a>
-        <a style="background-color:#b10221"href="https://amcgearstore.com/">AMC Gear Store &nbsp;</a>
-        <h2 style="background-color:inherit;font-size: large;text-align:center;color: #ffffff;"><b><u>Gear Store Password</u></b></h2>
-        <h4 style="background-color:inherit;font-size: medium;text-align:center;color: #ffffff; margin-bottom: 0px;"><b>AMC_GearStore123</b></h4>
-        <div id="logo" class="logo">
-        <h4 style="background-color: inherit;padding:35px; margin-top: 0px; margin-bottom: 45px;"><img src="../../images/amcLogoTwo.png"  alt="AMC Logo"></h4>
-        </div>
+        <script "Code_For_Website_Menu">
+            fetch('/menu_buttons/Side_Menu.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('Menu_Buttons').innerHTML = data);
+        </script>
       </div>
     <script>
         function openNav() {
@@ -123,33 +103,13 @@
                 <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="../../images/request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
                 <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;" id="myDropdown" class="dropdown-content">
                     <div style ="font-weight: bold;">
-                    <a style ="color:#E42B39"href="../crew/addison.html">Addison</a>
-                   <a style ="color:#E42B39" href="../crew/alexis.html">Alexis</a>
-                   <a style ="color:#E42B39" href="../crew/ava.html">Ava</a>
-                   <a style ="color:#E42B39" href="../crew/axel.html">Axel</a>
-                   <a style ="color:#E42B39" href="../crew/blake.html">Blake</a>
-                   <a style ="color:#E42B39" href="../crew/cally.html">Cally</a>
-                   <a style ="color:#E42B39" href="../crew/cameron.html">Cameron</a>
-                   <a style ="color:#E42B39" href="../crew/cindy.html">Cindy</a>
-                   <a style ="color:#E42B39" href="../crew/corbin.html">Corbin</a>
-                   <a style ="color:#E42B39" href="../crew/elizabeth.html">Elizabeth</a>
-                   <a style ="color:#E42B39" href="../crew/heath.html">Heath</a>
-                   <a style ="color:#E42B39" href="../crew/holdin.html">Holdin</a>
-                   <a style ="color:#E42B39" href="../crew/hunter.html">Hunter</a>
-                   <a style ="color:#E42B39" href="../crew/jaiden.html">Jaiden</a>
-                   <a style ="color:#E42B39" href="../crew/james.html">James</a>
-                   <a style ="color:#E42B39" href="../crew/kieran.html">Kieran</a>
-                   <a style ="color:#E42B39" href="../crew/liyah.html">Liyah</a>
-                   <a style ="color:#E42B39" href="../crew/madison.html">Madison</a>
-                   <a style ="color:#E42B39" href="../crew/michael kirkman.html">Michael Kirkman</a>
-                   <a style ="color:#E42B39" href="../crew/michael mahana.html">Michael Mahana</a>
-                   <a style ="color:#E42B39" href="../crew/paul.html">Paul</a>
-                   <a style ="color:#E42B39" href="../crew/pj.html">PJ</a>
-                   <a style ="color:#E42B39" href="../crew/sean bumbard.html">Sean Bumbard</a>
-                   <a style ="color:#E42B39" href="../crew/sean rackley.html">Sean Rackley</a>
-                   <a style ="color:#E42B39" href="../crew/taylor.html">Taylor</a>
-                   <a style ="color:#E42B39" href="../crew/travis.html">Travis</a>
-                   <a style ="color:#E42B39" href="../crew/tyler.html">Tyler</a>
+                        <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names"></div>
+
+                        <script "Code_For_Requests_Dropdown">
+                            fetch('/menu_buttons/Quick_Menu_Access_Bar.html')
+                                .then(response => response.text())
+                                .then(data => document.getElementById('View_Request_Dropdown').innerHTML = data);
+                        </script>
                 </div>
                </div>
                 
