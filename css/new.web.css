@@ -389,7 +389,7 @@
         }
         iframe {
             width: 100%;
-            height: 6490px;
+            height: 8450px;
             border: 0;
         }
         .scorecard img{
@@ -475,7 +475,7 @@
     }
     iframe {
         width: 100%;
-        height: 6450px;
+        height: 8400px;
         border: 0;
     }
     }
@@ -524,7 +524,7 @@
         }
         iframe {
             width: 100%;
-            height: 6300px;
+            height: 8300px;
             border: 0;
         }
         .scorecard img{
@@ -572,7 +572,7 @@
         }
         iframe {
             width: 100%;
-            height: 4190px;
+            height: 5000px;
             border: 0;
         }
         ul{
@@ -757,7 +757,7 @@
         }
         table{
             all:inherit;
-            max-width: 80%;
+            max-width: 65%;
             overflow-x: scroll;
             text-align: center;
             padding-left: 0%;
