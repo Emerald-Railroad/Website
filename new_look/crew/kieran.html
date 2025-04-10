@@ -56,7 +56,12 @@
 
 </style>
 <body>
-    <h1><span onclick="openNav()" class ="menu"style="display:inherit;position:absolute;width:30px;height:35px;" title="Poster Rules and New Info"> &#9776;</span>View Requests<div class = "homebutton" id ="homebutton"><a style="all: inherit;" href="../../index.html"><img src="../../images/amc_white.png" ></a></div></h1></h1>
+    <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
+        <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
+            title="Poster Rules and New Info"> &#9776;</span>View Requests <div class="homebutton" id="homebutton"><a
+                style="all: inherit;" href="/index.html"><img src="/images/amc_white.png"></a></div>
+        </h1>
+    </div>
     <div id="mySidenav" class="sidenav">
         <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br />
@@ -72,11 +77,13 @@
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
           document.getElementById("main").style.marginLeft = "50px";
+          openDropdown.classList.remove('show');
         }
         
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
           document.getElementById("main").style.marginLeft= "0";
+          openDropdown.classList.remove('show');
         }
         </script>
 
@@ -87,7 +94,7 @@
                 <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="../../images/request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
                 <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;" id="myDropdown" class="dropdown-content">
                     <div style ="font-weight: bold;">
-                        <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names"></div>
+                        <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names""></div>
 
                         <script "Code_For_Requests_Dropdown">
                             fetch('/menu_buttons/Quick_Menu_Access_Bar.html')
@@ -102,7 +109,6 @@
             </div>
         </p>
     </div>
-    
 
     <div class="form">
         <iframe style= "margin-top:10px;border-radius: 15px;height: 185px;width:322.5px;border:2px solid white" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0hv7PMBd6lGTnq-qMvRY744e4L-K19_LBkXlp1mmw1CJBqTm5GG2tggkSIGlOVekHmIueh3iU8af9/pubhtml?gid=1981128093&range=A37:C42&amp;single=true&amp;widget=false&chrome=false&amp;headers=false"></iframe>
@@ -115,6 +121,7 @@
     <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
+            closeNav();
         }
 
         window.onclick = function(event) {

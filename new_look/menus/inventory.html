@@ -168,11 +168,13 @@
 </style>
 
 <body>
+    <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
     <h1 class="invName"><span onclick="openNav()" class="menu"
             style="display:inherit;position:absolute;width:30px;height:35px" title="SideMenu"> &#9776;</span>Poster
         Inventory<div class="homebutton" id="homebutton"><a style="all: inherit;" href="../../index.html"><img
                     src="../../images/amc_white.png"></a></div>
     </h1>
+</div>
     </div>
     <div id="mySidenav" class="sidenav">
         <a style="color:#ffffff;background-color:inherit" href="javascript:void(0)" class="closebtn"
@@ -373,6 +375,7 @@
 <script>
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
+        closeNav();
     }
 
     window.onclick = function (event) {

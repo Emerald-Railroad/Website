@@ -10,23 +10,21 @@
 </head>
 
 <body>
-    <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
+    <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
+        <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
             title="Poster Rules and New Info"> &#9776;</span>Longview 10 <div class="homebutton" id="homebutton"><a
-                style="all: inherit;" href="index.html"><img src="../images/amc_white.png"></a></div>
-    </h1>
-    </h1>
-    <div style="background: url(../images/amcbackground.jpg) center no-repeat, url(../images/theatre.png) center right;background-size: 1000px;"
-        alt="AMC Longview 10">
-        <br></br>
-        <br></br>
-        <br></br>
-        <h2 style ="text-align: center;color: blue;margin-top:-50px ;margin-bottom: -25px;padding: 5px;"><a style="color:blue; width:294px;border:2px solid black;height: 20px;font-size: large;border-radius: 20px;" href="/new_look/menus/AMC News/CurrentNews.html" title="See whats new this year!;"><b>AMC NEWS 3/18/25 available now!</b></a></h2> -->
+                style="all: inherit;" href="/index.html"><img src="/images/amc_white.png"></a></div>
+        </h1>
     </div>
+    <div style ="background: url(../images/amcbackground.jpg) center no-repeat, url(../images/theatre.png) center right;background-size: 1000px;" alt="AMC Longview 10">
+        <br></br>
+        <br></br>
+        <br></br>
+        <h2 style ="text-align: center;color: blue;margin-bottom:-25px;margin-top:-50px;padding: 5px;"><a style="color:blue; width:294px;border:2px solid black;height: 20px;font-size: large;border-radius: 20px;" href="/new_look/menus/AMC News/CurrentNews.html"><b>AMC NEWS 3/18/25 available now!</b></a></h2> -->
+        </div>
     <div id="mySidenav" class="sidenav">
-        <a style="color:#ffffff;background-color:inherit" href="javascript:void(0)" class="closebtn"
-            onclick="closeNav()">&times;</a>
-        <br>
-
+        <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br />
         <div id="Menu_Buttons" "Website_Menu"></div>
 
         <script "Code_For_Website_Menu">
@@ -34,54 +32,48 @@
                 .then(response => response.text())
                 .then(data => document.getElementById('Menu_Buttons').innerHTML = data);
         </script>
-    </div>
-
+      </div>
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "50px";
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "50px";
+          openDropdown.classList.remove('show');
         }
-
+        
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          openDropdown.classList.remove('show');
         }
-    </script>
+        </script>
 
     <div class="pages">
         <p>
-        <div style="background-image: url(../../images/red.jpg);background-position: right center;" class="dropdown">
-            <a id="newsbutton" class="newsbutton" style="border:2px solid black;height: 20px;border-radius: 10px;"
-                href="/new_look/menus/AMC News/CurrentNews.html" title="See whats new this week!"><b>AMC News</b></a>
-            <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View
-                    Requests</b><img src="../../images/request.png" alt="request logo"
-                    style="float:right;width:17px;height:17px;margin-left:5px;"></button>
-            <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;"
-                id="myDropdown" class="dropdown-content">
-                <div style="font-weight: bold;">
+            <div style="background-image: url(../../images/red.jpg);background-position: right center;" class="dropdown">
+                <a id="newsbutton" class ="newsbutton" style="border:2px solid black;height: 20px;border-radius: 10px;" href="/new_look/menus/AMC News/CurrentNews.html" title="See whats new this week!"><b>AMC News</b></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="../../images/request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
+                <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;" id="myDropdown" class="dropdown-content">
+                    <div style ="font-weight: bold;">
+                        <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names""></div>
 
-                    <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names"></div>
-
-                    <script "Code_For_Requests_Dropdown">
-                        fetch('/menu_buttons/Quick_Menu_Access_Bar.html')
-                            .then(response => response.text())
-                            .then(data => document.getElementById('View_Request_Dropdown').innerHTML = data);
-                    </script>
+                        <script "Code_For_Requests_Dropdown">
+                            fetch('/menu_buttons/Quick_Menu_Access_Bar.html')
+                                .then(response => response.text())
+                                .then(data => document.getElementById('View_Request_Dropdown').innerHTML = data);
+                        </script>
                 </div>
+               </div>
+                
+               <a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px" href="https://amctheatres.workvivo.us/directory/people/4000883291" title="Contact Axel if you have any questions"><b>Contact</b><img src="/images/workvivo.jpg" alt="workvivo logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                 
             </div>
-
-            <a id="menubutton" class="contactbutton" style="border:2px solid black;border-radius: 10px"
-                href="https://amctheatres.workvivo.us/directory/people/4000883291"
-                title="Contact Axel if you have any questions"><b>Contact</b><img src="../../images/workvivo.jpg"
-                    alt="All Access logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
-
-        </div>
         </p>
     </div>
 
     <div "Old_look_Button">
-        <h2 style ="text-align: center;padding: 5px;"><p style = "background-color: inherit; border: inherit;">All Workplace links have been changed to AMC All access!<br>Contact/AMC All access buttons will not work until you guys have claimed your accounts.<br><p style="color: lightskyblue;background-color: inherit;font-size: medium;border: none;">View AMC News 3/18/25 for more info on AMC All Access (Workplace Replacement)</p><!--<a style="background-color:white; color:red; width:144px;border:3px solid black;height: 20px; font-size: large;border-radius: 10px;" href="new_look/changelog.html" title="View what is new"><b>Review Changes</b></a></h2> -->
+        <!--<h2 style ="text-align: center;padding: 5px;"><p style = "background-color: inherit; border: inherit;">All Workplace links have been changed to AMC All access!<br>Contact/AMC All access buttons will not work until you guys have claimed your accounts.<br><p style="color: lightskyblue;background-color: inherit;font-size: medium;border: none;">View AMC News 3/18/25 for more info on AMC All Access (Workplace Replacement)</p><!--<a style="background-color:white; color:red; width:144px;border:3px solid black;height: 20px; font-size: large;border-radius: 10px;" href="new_look/changelog.html" title="View what is new"><b>Review Changes</b></a></h2> -->
     </div>
+
     <br>
 
     <div class="home">
@@ -178,6 +170,7 @@
     <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
+            closeNav();
         }
 
         window.onclick = function (event) {
