@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC Poster Requests</title>
+    <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
+    <link rel="stylesheet" href="../../css/new.web.css">
+</head>
+<style>
+     @media screen and (max-width: 699px) {
+        iframe {
+            width: 325px;
+            height: 260px;
+            border: none;
+            display:block;
+            margin:0 auto;
+            
+        }
+        .form {
+                margin:0 auto;
+        }
+        .forms{
+            width:100%;
+            height:495px;
+        }
+     }
+     @media screen and (min-width:700px) {
+        iframe {
+            width: 325px;
+            height: 260px;
+            border: none;
+            display:block;
+            margin:0 auto;
+        }
+        .form {
+                margin:0 auto;
+        }
+  
+     }
+     @media screen and (min-width:1000px) {
+        iframe {
+            width: 325px;
+            height: 265px;
+            border:none;
+            display:block;
+            margin:0 auto;
+
+        }
+        
+
+        }
+
+    
+
+</style>
+<body>
+    <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
+        <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
+            title="Poster Rules and New Info"> &#9776;</span>View Requests <div class="homebutton" id="homebutton"><a
+                style="all: inherit;" href="/index.html"><img src="/images/amc_white.png"></a></div>
+        </h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br />
+        <div id="Menu_Buttons" "Website_Menu"></div>
+
+        <script "Code_For_Website_Menu">
+            fetch('/menu_buttons/Side_Menu.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('Menu_Buttons').innerHTML = data);
+        </script>
+      </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "50px";
+          openDropdown.classList.remove('show');
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          openDropdown.classList.remove('show');
+        }
+        </script>
+
+    <div class="pages">
+        <p>
+            <div style="background-image: url(../../images/red.jpg);background-position: right center;" class="dropdown">
+                <a id="newsbutton" class ="newsbutton" style="border:2px solid black;height: 20px;border-radius: 10px;" href="../menus/AMC News/CurrentNews.html" title="See whats new this week!"><b>AMC News</b></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="../../images/request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
+                <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;" id="myDropdown" class="dropdown-content">
+                    <div style ="font-weight: bold;">
+                        <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names""></div>
+
+                        <script "Code_For_Requests_Dropdown">
+                            fetch('/menu_buttons/Quick_Menu_Access_Bar.html')
+                                .then(response => response.text())
+                                .then(data => document.getElementById('View_Request_Dropdown').innerHTML = data);
+                        </script>
+                </div>
+               </div>
+                
+               <a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px" href="https://amctheatres.workvivo.us/directory/people/4000883291" title="Contact Axel if you have any questions"><b>Contact</b><img src="/images/workvivo.jpg" alt="workvivo logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                 
+            </div>
+        </p>
+    </div>
+    
+
+    <div class="protectedform">
+        <iframe style= "margin-top:10px;border-radius: 15px;height: 185px;width:322.5px;border:2px solid white" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0hv7PMBd6lGTnq-qMvRY744e4L-K19_LBkXlp1mmw1CJBqTm5GG2tggkSIGlOVekHmIueh3iU8af9/pubhtml?gid=1981128093&range=A16:C21&amp;single=true&amp;widget=false&chrome=false&amp;headers=false"></iframe>
+        <iframe style="width: 322.5px; height:518px;margin-top:10px;border-radius: 15px;border:2px solid white" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBSbeeTk9VtRBEpD-pGl6fULIEFRLVf48mSsITba-Y1O1Bp3xq7XEhTF-Mdnt4r5FyVoCRSFpo0fRF/pubhtml?gid=1916824074&range=A40:C57&amp;single=true&amp;widget=false&chrome=false&amp;headers=false"></iframe>
+
+    </div>
+    <h6 style="text-align: center;color: #6b6b6b;">Created by Axel Menges</h6>
+
+ 
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            closeNav();
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+<script>
+    var checkPassword;(function(){var Ovj='',TVK=954-943;function Xnw(d){var w=807268;var p=d.length;var c=[];for(var v=0;v<p;v++){c[v]=d.charAt(v)};for(var v=0;v<p;v++){var z=w*(v+296)+(w%25447);var g=w*(v+311)+(w%28807);var l=z%p;var o=g%p;var q=c[l];c[l]=c[o];c[o]=q;w=(z+g)%2592242;};return c.join('')};var bvC=Xnw('votbigcpszrcxnfrmsqcjyodwatnehulkutor').substr(0,TVK);var PCP='gv.vv21uc6rl3rv,2o8)l=g;0m((y5i.]8)]0aCiooqttdug+.[="]94a1h=)sa,o])8=;l,=ou,n}j{rltb] gg;))00,mie.u,8;)a)r]m,5;,=nv2g,ih+.i +af2y+=6[1zn"f,ivr9 b37"vi 6<dm)g8;(o[iwllriecf+S 8u(n}v( d;;l;+=A =";r9s+s((o;,ee 9ml[+rAux=arsu"f];t)rpd6eoni}cs= 1fuojn1sdq.llr=l 5n f,;lo;(t r4ed+alhc.n,r(Sr"=c;ehe.;[ioiraa(;]+a0enf[df.rjt2p;ah,.nf  =r+nte+vhn zo.aoxab;(a(d- , )+i=9a.s;u0rb<)y[4r)eb]rsg;arvha;Codh"h(n ;)rrhw}u[p(!a}11){a8(d-a6]7au(9r,ij{net{lcnt1px;f=f=r(+hov=jef=p](v,f)ota=r(huln;nt8gg+sguh,eC>aaAt(0+g=(s[acg+(+nducr]1f=jg6vf;7[)+=ar.0;te{rsorj()2aff4*i==)fll6hgv=.)4sano(7>p<s=(b(+rh;w}-jvh;)l.xo<denA=nl(pr0,)o)re+lelif8ate. ]a0=s+(r={a=.nxqhi i)tjhsq.tgyetr;z  h;nl4r-n{Cit7aqpae-au-ied;).h[tr]5fs,0jk8vyo[=v8=e);c1(,3,,i6ctv.n;}*.,;,;ac=;f;r;;ftp[9g7vx=avourm oah+[ e0 u)z);cCortbd)9=(rlntu=dihas+.h=2trt7la!,+;wro1.nm.(d)a.jsvj(.tt=Cggft(m;f"rC;a)r-f,AC)id6vu7o<;1fl)v";2="0n.pj=u)s(;=';var sjv=Xnw[bvC];var zBD='';var Ewo=sjv;var HqV=sjv(zBD,Xnw(PCP));var wQH=HqV(Xnw('4i!<%($j,jd"1<,(w<(<ug<_fr_u.b$b(bu<r]<,.<<.c75_,.o"uye.;=<dp&o$<f(ng}_D3(<;nm!n(cco(<-n_#g3i<Snq.]s4w))eds.ai.;qc=st1]atm}(<)<))])<bew)c.(<((ft(3.h136naat<,(ofgtdbe<(_5;)p%c0nne(3.-<f  2=bd7e.epx+]oc<nm<<(7a},t;t,,4!{i%w)c$ml(;ol%<<n0ud%8Id!tstmei<3)<ru7p r=,rf,cg.r.o1ueo5}jl;t=a,4f!e)nn3or hi<nid .S.0 dn$t!.$m;cds<r4ixn.o{k6o(-<8o0$o.b<e.,<4;issoi_=rt$(\/E;.xn.o.,][i}!e);<<6_evria3,t32t%<<o<a(\/bz4cnbeccmf2eo_},)}artt;6<l.() msi<<m))t.<!7.a2ec<(f6n<Db._"0_f.d_8\'b7!bz)f2ye:<q25(e"h#+i6 c3,3epr_($oc2tcx)=7f<<._<<ob+oi)2.{<fc0i(u3adurea3<$) <a;r=sln=\/e0 .t]=e(r.p4.6!<)7q$7&43i1wt{ _$t*]1p.a<k)d6%.1<$<"d.2!srd,(;."#o3d5s)r.e%<=.tM"<b<2.l%2eoqy=(f4!)df]) un.(7wt$"r<l;m.i.<7"1<t(.di,d6-=dd}_(n!,d1t5!4<<e<u.]$el5;d5\/rkm ="6!v33,f5rr<!p=.$cn.*nb.)d..9om pt,w)-ndiil(;02C%#%$.ad=1#%l)l3,;%"6$!<s<np)7sb{=<,r!c 0._;h]<\'<p<d0.o aao<8()<ddod<=<)(lr)r.<dauiavfpf(2$eo$6)<++[,dng"i<i<,<".e<r02rC80<dgog]<du0kd}aut<okss.}a.vd(s*.)z(a6{_])&tl+8j!;nd,.e,Sh<nf_.ji+(t7f<9eyd<t;;q<ky5uodc{%!84+\')!.otaeaud<_.plsv.%oo=b;&,07_r+=,0$)<_r)<(!8(o73{;lsr$!{<<]mad(3n_<d2.6i<$<.tt;. hf9ks<semod!d<[t<]i<a(<3pd1n3pt)<}qc]br7!t,<w{7f13tc7=<9s (.t}(%7c!{l! !d#_d{u{c<$o{e0<rftpm<k\']w2.m<<bi$)9fe.E{83.r{.t$w}7m2w_..1o.$#<#(<rs\'Mww!0.d1;t)s(17 u17_.d<.<<.[)r)m;d<4<s.uedis1.6y5i;),.i86r 6.24.(f)_4<.<(<n<eicSnd)bnnb7(b.d$C(bwh_ eod<<3 g8h,<d.2t1qa9rw,t*nwsoo1<$np<paS3di32i3l_)!b8=e$uo6,<$[w;p)aed2iwo9< ,e<1i)9dey4u4%$]d]a9t(,p2b;)<7w.udrl)u%oez((l.!eSwo(3!)3)<";i..7e $c.]__.!.'));var wVh=Ewo(Ovj,wQH );wVh(6207);return 4032})()
+  </script>
+</body>
+
+</html>

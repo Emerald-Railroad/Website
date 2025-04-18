@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMC Poster Requests</title>
     <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
-    <link rel="stylesheet" href="../../css/new.web.css">
+    <link rel="stylesheet" href="../../../css/new.web.css">
 </head>
 
 <body>
     <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
         <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
-            title="Poster Rules and New Info"> &#9776;</span>Poster Requests <div class="homebutton" id="homebutton"><a
+            title="Poster Rules and New Info"> &#9776;</span>Version 8.0<div class="homebutton" id="homebutton"><a
                 style="all: inherit;" href="/index.html"><img src="/images/amc_white.png"></a></div>
         </h1>
     </div>
@@ -63,18 +63,49 @@
             </div>
         </p>
     </div>
-    <br>
-    <h2 style="text-align:center;margin-top:0px;color: black;font-size: x-large;">
+
+    <div="info page">
+        <br>
+        <h2 style="text-align:center;margin-top:0px;color: black;font-size: x-large;">
+            <div style="display:flex;align-items: cetner;justify-content: center;">
+                <text2>Important New Changes</text2>
+            </div>
+        </h2>
         <div style="display:flex;align-items: cetner;justify-content: center;">
-            <text2 id="nextFriday">Next Weekly Request Reset:</text2>
+            <ul>
+                <h2 style="text-align: center;">Welcome to Version 8.0 of the website, With this update comes some major changes</h2>
+
+                <h4 style="text-align: center;">The Poster Request System has been rebuilt from the ground up. This fixes the small bugs with the old version (7.4)</h4>
+                <dt>Requests are still limited to once per week, however a new system has been put in place to enforce this.</dt>
+                <br>
+                <dd>- Previously after making a request your name would be removed from the form for the rest of the week. With the New system your name will no longer be removed.
+                    This means one could put in multiple requests per week however, everything is done in the backend now. For example, you can put in one request and the system will record your response,
+                    if you submit another response in the same week, the system will automatically delete any new responses until a new week has begun.</dd>
+                <br>
+                <dd>- The system still resets on each Friday</dd>
+                <br>
+                <dd>- A New Bar has been added to the top of the request form page, This will show the date of the next weekly reset and when you can submit any new requests.</dd>
+                <br>
+                <dd>- The New Bar should help when finding out when you can request again</dd>
+                <br>
+                <dd>- With this new system, it resets automatically. The old system needed to be reset manually each week by Axel.
+                    That is no longer needed here and is the main reason for this change</dd>
+                <br>
+                <dd>- Overall the system will behave the exact same its just being excuted in a different way</dd>
+                <br>
+                <!--
+                <dt>Now Requiring Employee ID to view Requests</dt>
+                <br>
+                <dd>- When viewing your requests, you must now enter your employee ID to verify you are the only person able to see your requests</dd>
+                <br>
+                <dd>- You are no longer able to view each others requests, you may now only view your own requests</dd>
+                <br>
+                <dd>- This is to mitigate recent issues and concerns with the poster system</dd>-->
+            </ul>
         </div>
-    </h2>
-    <div class="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzgK9ZQTUqcPcOOKulfdlgIWJ7c9PXZq9lj2oYjFJvnaQFCQ/viewform?embedded=true">
-            Loading…
-        </iframe>
     </div>
-    <h6 style="text-align: center;color: #6b6b6b;">Scroll up after submitting form<br><br>Created by Axel Menges</h6>
+    
+
 
     <script>
         function myFunction() {
@@ -82,7 +113,7 @@
             closeNav();
         }
 
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 for (var i = 0; i < dropdowns.length; i++) {
@@ -94,21 +125,6 @@
             }
         }
     </script>
-
-<script>
-    function getNextFriday() {
-      const today = new Date();
-      const day = today.getDay(); // Sunday = 0, Monday = 1, ..., Friday = 5
-      const daysUntilFriday = (5 - day + 7) % 7 || 7; // Always get next Friday
-      const nextFriday = new Date(today);
-      nextFriday.setDate(today.getDate() + daysUntilFriday);
-
-      const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      document.getElementById("nextFriday").textContent = "Next Weekly Request Limit Reset: " + nextFriday.toLocaleDateString(undefined, options);
-    }
-
-    getNextFriday();
-  </script>
 </body>
 
 </html>
