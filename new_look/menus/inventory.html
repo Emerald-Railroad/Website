@@ -165,16 +165,34 @@
             top: 7px;
         }
     }
+
+
+    /* Ensures borders are visible and consistent */
+    table.table th {
+        border-collapse: collapse;
+        border: 2px solid white;
+        /* Table outer border */
+    }
+    table.table {
+        border-collapse: collapse;
+        border: 2px solid #E42B39;
+        /* Table outer border */
+    }
+    
+    table.table td {
+        border: 2px solid black;
+        /* Inner cell borders */
+    }
 </style>
 
 <body>
     <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
-    <h1 class="invName"><span onclick="openNav()" class="menu"
-            style="display:inherit;position:absolute;width:30px;height:35px" title="SideMenu"> &#9776;</span>Poster
-        Inventory<div class="homebutton" id="homebutton"><a style="all: inherit;" href="../../index.html"><img
-                    src="../../images/amc_white.png"></a></div>
-    </h1>
-</div>
+        <h1 class="invName"><span onclick="openNav()" class="menu"
+                style="display:inherit;position:absolute;width:30px;height:35px" title="SideMenu"> &#9776;</span>Poster
+            Inventory<div class="homebutton" id="homebutton"><a style="all: inherit;" href="../../index.html"><img
+                        src="../../images/amc_white.png"></a></div>
+        </h1>
+    </div>
     </div>
     <div id="mySidenav" class="sidenav">
         <a style="color:#ffffff;background-color:inherit" href="javascript:void(0)" class="closebtn"
@@ -242,7 +260,7 @@
                 <main>
                     <div class="container">
                         <!-- Table -->
-                        <table class="table border-danger">
+                        <table class="table">
                             <thead
                                 style="font-size:large;text-decoration: underline; background-color: white;color:black;"
                                 class="" id="table-head"></thead>
@@ -294,7 +312,13 @@
                         tableHead += "</tr>";
                     } else {
                         tableBody += "<tr>";
-                        row.forEach((val) => (tableBody += "<td>" + val + "</td>"));
+                        row.forEach((val, colIndex) => {
+                            const bgColors = ["#000000", "#fe6a6a", "#ffbe71", "#fff873", "#83C9EB", "#84E190", "#E49EDC"];
+                            const textColors = ["#ffffff", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000"];
+                            const bgColor = bgColors[colIndex % bgColors.length];
+                            const textColor = textColors[colIndex % textColors.length];
+                            tableBody += `<td style="background-color: ${bgColor}; color: ${textColor};">${val}</td>`;
+                        });
                         tableBody += "</tr>";
                     }
                 });
