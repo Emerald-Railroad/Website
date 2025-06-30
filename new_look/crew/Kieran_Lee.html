@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMC Poster Requests</title>
+<link rel="icon" type="image/x-icon" href="amc_logo.jpg">
+<link rel="stylesheet" href="../../css/new.web.css">
+</head>
+<style>
+@media screen and (max-width: 699px) {
+        iframe {
+            width: 325px;
+            height: 260px;
+            border: none;
+            display:block;
+            margin:0 auto;
+            
+        }
+        .form {
+                margin:0 auto;
+        }
+        .forms{
+            width:100%;
+            height:495px;
+        }
+     }
+     @media screen and (min-width:700px) {
+        iframe {
+            width: 325px;
+            height: 260px;
+            border: none;
+            display:block;
+            margin:0 auto;
+        }
+        .form {
+                margin:0 auto;
+        }
+  
+     }
+     @media screen and (min-width:1000px) {
+        iframe {
+            width: 325px;
+            height: 265px;
+            border:none;
+            display:block;
+            margin:0 auto;
+
+        }
+        
+
+        }
+
+    
+
+</style>
+<body>
+<!-- (the rest of your HTML content) -->
+<div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
+        <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
+            title="Poster Rules and New Info"> &#9776;</span>View Requests <div class="homebutton" id="homebutton"><a
+                style="all: inherit;" href="/index.html"><img src="/images/amc_white.png"></a></div>
+        </h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br />
+        <div id="Menu_Buttons" "Website_Menu"></div>
+
+        <script "Code_For_Website_Menu">
+            fetch('/menu_buttons/Side_Menu.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('Menu_Buttons').innerHTML = data);
+        </script>
+      </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "50px";
+          openDropdown.classList.remove('show');
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          openDropdown.classList.remove('show');
+        }
+        </script>
+
+    <div class="pages">
+        <p>
+            <div style="background-image: url(../../images/red.jpg);background-position: right center;" class="dropdown">
+                <a id="newsbutton" class ="newsbutton" style="border:2px solid black;height: 20px;border-radius: 10px;" href="../menus/AMC News/CurrentNews.html" title="See whats new this week!"><b>AMC News</b></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="../../images/request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
+                <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;" id="myDropdown" class="dropdown-content">
+                    <div style ="font-weight: bold;">
+                        <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names""></div>
+
+                        <script "Code_For_Requests_Dropdown">
+                            fetch('/menu_buttons/Requests_Dropdown_Button.html')
+                                .then(response => response.text())
+                                .then(data => document.getElementById('View_Request_Dropdown').innerHTML = data);
+                        </script>
+                </div>
+               </div>
+                
+               <a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px" href="https://amctheatres.workvivo.us/directory/people/4000883291" title="Contact Axel if you have any questions"><b>Contact</b><img src="/images/workvivo.jpg" alt="workvivo logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                 
+            </div>
+        </p>
+    </div>
+<div class="form">
+    <!-- FIRST IFRAME HERE -->
+    <iframe style= "margin-top:10px;border-radius: 15px;height: 184px;width:322.5px;border:2px solid white" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-GfxxTY9bc9Mu1JXCgkYSgLhvQzzyAWSbHpMVYaJxbCpLr8kyMWy4NeWJRDT6A-vNcvONxEtgO2Gi/pubhtml?gid=0&range=M25:O30&single=true&widget=false&chrome=false&headers=false"></iframe>
+    <!-- SECOND IFRAME HERE -->
+    <iframe style="width: 322.5px; height:518px;margin-top:10px;border-radius: 15px;border:2px solid white" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-GfxxTY9bc9Mu1JXCgkYSgLhvQzzyAWSbHpMVYaJxbCpLr8kyMWy4NeWJRDT6A-vNcvONxEtgO2Gi/pubhtml?gid=926562697&range=M61:O78&single=true&widget=false&chrome=false&headers=false"></iframe>
+</div>
+
+<h6 style="text-align: center;color: #6b6b6b;">Created by Axel Menges</h6>
+
+<script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            closeNav();
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+<!-- (rest of HTML) -->
+</body>
+</html>
