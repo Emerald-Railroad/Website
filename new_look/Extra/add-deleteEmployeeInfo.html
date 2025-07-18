@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC Poster Requests</title>
+    <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
+    <link rel="stylesheet" href="../../../css/new.web.css">
+</head>
+
+<body>
+    <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
+        <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
+            title="Poster Rules and New Info"> &#9776;</span>How to add/delete new Employees<div class="homebutton" id="homebutton"><a
+                style="all: inherit;" href="/index.html"><img src="/images/amc_white.png"></a></div>
+        </h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br />
+        <div id="Menu_Buttons" "Website_Menu"></div>
+
+        <script "Code_For_Website_Menu">
+            fetch('/menu_buttons/Side_Menu.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('Menu_Buttons').innerHTML = data);
+        </script>
+      </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "50px";
+          openDropdown.classList.remove('show');
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          openDropdown.classList.remove('show');
+        }
+        </script>
+
+    <div class="pages">
+        <p>
+            <div style="background-image: url(../../images/red.jpg);background-position: right center;" class="dropdown">
+                <a id="newsbutton" class ="newsbutton" style="border:2px solid black;height: 20px;border-radius: 10px;" href="../menus/inventory.html" title="See whats new this week!"><b>Poster Inv</b></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="../../images/request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
+                <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;" id="myDropdown" class="dropdown-content">
+                    <div style ="font-weight: bold;">
+                        <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names""></div>
+
+                        <script "Code_For_Requests_Dropdown">
+                            fetch('/menu_buttons/Quick_Menu_Access_Bar.html')
+                                .then(response => response.text())
+                                .then(data => document.getElementById('View_Request_Dropdown').innerHTML = data);
+                        </script>
+                </div>
+               </div>
+                
+               <a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px" href="https://amctheatres.workvivo.us/directory/people/4000883291" title="Contact Axel if you have any questions"><b>Contact</b><img src="/images/workvivo.jpg" alt="workvivo logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                 
+            </div>
+        </p>
+    </div>
+
+
+    <div="info page pt 2">
+        
+        <br>
+        <h2 style="text-align:center;margin-top:0px;color: black;font-size: x-large;">
+            <div style="display:flex;align-items: cetner;justify-content: center;">
+                <text2>Follow these steps</text2>
+            </div>
+        </h2>
+        <div style="display:flex;align-items: cetner;justify-content: center;">
+            <dl>
+                <dt><b>Step 1.</b></dt>
+                <br>
+                <dd>- Go to the Request Form Responses spreadsheet -> <a style = "border: 2px solid white; background-color: red; color:white" href="https://docs.google.com/spreadsheets/d/1YjRLyu-1GgwUHfYo-y0zAzZ3sbrVPmEhSOvAc5MdUqk/edit?gid=0#gid=0">Here</a></dd>
+                <br>
+                <dt><b>If adding an employee follow steps 2 - 15, if deleting an employee follow steps 2a - 15a</b></dt>
+                <br>
+                <dt><b>Step 2.</b></dt>
+                <br>
+                <dd>- Click on the red Add New Employee Button</dd>
+                <br>
+                <dt><b>Step 3.</b></dt>
+                <br>
+                <dd>- Type in the persons First Name and click OK</dd>
+                <br>
+                <dt><b>Step 4.</b></dt>
+                <br>
+                <dd>- Type in the persons Last Name and click OK</dd>
+                <br>
+                <dt><b>Step 5.</b></dt>
+                <br>
+                <dd>- Wait about 30secs to a minute for the system to add the new tables. A pop up should show saying "HTML file with updated iframes created in your Drive folder." click ok, Then a pop up should show saying "Employee tables created and dropdown links updated!
+" click ok.
+                </dd>
+                <br>
+                <dt><b>Step 6.</b></dt>
+                <br>
+                <dd>- Navigate to the HTML GEN files folder -> <a style = "border: 2px solid white; background-color: red; color:white" href="https://drive.google.com/drive/folders/1PS8luWFNOWEv4-tMxIOjR8pTrc4dY_Wd?dmr=1&ec=wgc-drive-hero-goto">Here</a></dd>
+                <br>
+                <dt><b>Step 7.</b></dt>
+                <br>
+                <dd>- Find the file of the persons name you just created. For example if the persons name is John Doe find the file name John_Doe.html and download the file</dd>
+                <br>
+                <dt><b>Step 8.</b></dt>
+                <br>
+                <dd>- Find the file Requests_Dropdown_Button.html and download the file</dd>
+                <br>
+                <dt><b>Step 9.</b></dt>
+                <br>
+                <dd>- Navigate to Github (You'll need to create a github account if you don't already have one. Then message Axel:(903)503-4942 Your Github Name to give you permission) -> <a style = "border: 2px solid white; background-color: red; color:white" href="https://github.com/Emerald-Railroad/Website">Here</a></dd>
+                <br>
+                <dt><b>Step 10.</b></dt>
+                <br>
+                <dd>- Click on the new_look folder, then click on the crew folder</dd>
+                <br>
+                <dt><b>Step 11.</b></dt>
+                <br>
+                <dd>- Click the Add file button on the top, Then Click Upload files</dd>
+                <br>
+                <dt><b>Step 12.</b></dt>
+                <br>
+                <dd>- Drag and drop the person name file here, For example John_Doe.html, then click Commit changes. Changes can take up to 5 minutes</dd>
+                <br>
+                <dt><b>Step 13.</b></dt>
+                <br>
+                <dd>- Navigate back to the root website folder, and click menu_buttons</dd>
+                <br>
+                <dt><b>Step 14.</b></dt>
+                <br>
+                <dd>- Click the Add file button on the top, Then Click Upload files</dd>
+                <br>
+                <dt><b>Step 15.</b></dt>
+                <br>
+                <dd>- Drag and drop the Requests_Dropdown_Button.html file here, then click Commit changes. Changes can take up to 5 minutes</dd>
+            </dl>
+        </div>
+        <div class = "Delete Employee" style="display:flex;align-items: cetner;justify-content: center;" >
+            <dl>
+                <br>
+                <dt><b>Follow these steps to delete an employee</b></dt>
+                <br>
+                <dt><b>Step 2a.</b></dt>
+                <br>
+                <dd>- Click on the white Remove an Employee button</dd>
+                <br>
+                <dt><b>Step 3a.</b></dt>
+                <br>
+                <dd>- Type in the persons First Name and click OK</dd>
+                <br>
+                <dt><b>Step 4a.</b></dt>
+                <br>
+                <dd>- Type in the persons Last Name and click OK</dd>
+                <br>
+                <dt><b>Step 5a.</b></dt>
+                <br>
+                <dd>- Wait about 30secs to a minute for the system to delete the tables. A pop up should show saying "Employee tables and HTML file deleted, and dropdown links updated!" click ok.
+                </dd>
+                <br>
+                <dt><b>Step 6a.</b></dt>
+                <br>
+                <dd>- Navigate to the HTML GEN files folder -> <a style = "border: 2px solid white; background-color: red; color:white" href="https://drive.google.com/drive/folders/1PS8luWFNOWEv4-tMxIOjR8pTrc4dY_Wd?dmr=1&ec=wgc-drive-hero-goto">Here</a></dd>
+                <br>
+                <dt><b>Step 7a</b></dt>
+                <br>
+                <dd>- Find the file Requests_Dropdown_Button.html and download the file</dd>
+                <br>
+                <dt><b>Step 8a.</b></dt>
+                <br>
+                <dd>- Navigate to Github (You'll need to create a github account if you don't already have one. Then message Axel:(903)503-4942 Your Github Name to give you permission) -> <a style = "border: 2px solid white; background-color: red; color:white" href="https://github.com/Emerald-Railroad/Website">Here</a></dd>
+                <br>
+                <dt><b>Step 9a.</b></dt>
+                <br>
+                <dd>- click on the menu_buttons folder</dd>
+                <br>
+                <dt><b>Step 10a.</b></dt>
+                <br>
+                <dd>- Click the Add file button on the top, Then Click Upload files</dd>
+                <br>
+                <dt><b>Step 11a.</b></dt>
+                <br>
+                <dd>- Drag and drop the Requests_Dropdown_Button.html file here, then click Commit changes. Changes can take up to 5 minutes</dd>
+                <br>
+                <dt><b>Step 12a.</b></dt>
+                <br>
+                <dd>- Navigate back to the root website folder, then click on the new_look folder, then click on the crew folder</dd>
+                <dt><b>Step 13a.</b></dt>
+                <br>
+                <dd>- Find the employee name you just deleted for example John_Doe.html, then click on the file</dd>
+                <br>
+                <dt><b>Step 14a.</b></dt>
+                <br>
+                <dd>- Click on the three dots on the top ...</dd>
+                <br>
+                <dt><b>Step 15a.</b></dt>
+                <br>
+                <dd>- Click on delete file, then click on commit changes at the top. Changes can take up to 5 minutes</dd>
+                <br>
+            </dl>
+        </div>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            closeNav();
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
