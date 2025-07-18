@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC Poster Requests</title>
+    <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
+    <link rel="stylesheet" href="../../../css/new.web.css">
+</head>
+
+<body>
+    <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
+        <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
+            title="Poster Rules and New Info"> &#9776;</span>Website Management<div class="homebutton" id="homebutton"><a
+                style="all: inherit;" href="/index.html"><img src="/images/amc_white.png"></a></div>
+        </h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br />
+        <div id="Menu_Buttons" "Website_Menu"></div>
+
+        <script "Code_For_Website_Menu">
+            fetch('/menu_buttons/Side_Menu.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('Menu_Buttons').innerHTML = data);
+        </script>
+      </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "50px";
+          openDropdown.classList.remove('show');
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          openDropdown.classList.remove('show');
+        }
+        </script>
+
+    <div class="pages">
+        <p>
+            <div style="background-image: url(../../images/red.jpg);background-position: right center;" class="dropdown">
+                <a id="newsbutton" class ="newsbutton" style="border:2px solid black;height: 20px;border-radius: 10px;" href="../menus/inventory.html" title="See whats new this week!"><b>Poster Inv</b></a>
+                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="../../images/request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
+                <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;" id="myDropdown" class="dropdown-content">
+                    <div style ="font-weight: bold;">
+                        <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names""></div>
+
+                        <script "Code_For_Requests_Dropdown">
+                            fetch('/menu_buttons/Quick_Menu_Access_Bar.html')
+                                .then(response => response.text())
+                                .then(data => document.getElementById('View_Request_Dropdown').innerHTML = data);
+                        </script>
+                </div>
+               </div>
+                
+               <a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px" href="https://amctheatres.workvivo.us/directory/people/4000883291" title="Contact Axel if you have any questions"><b>Contact</b><img src="/images/workvivo.jpg" alt="workvivo logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
+                 
+            </div>
+        </p>
+    </div>
+
+    <div="info page">
+        <br>
+        <h2 style="text-align:center;margin-top:0px;color: black;font-size: x-large;">
+            <div style="display:flex;align-items: cetner;justify-content: center;">
+                <text2>Website System Links</text2>
+            </div>
+        </h2>
+        <div style="display:flex;align-items: cetner;justify-content: center;">
+        <p style = "all:unset;">
+        <a style="background-color:rgb(177, 17, 17); color:white; width:400px;border:3px solid white;height: 20px; font-size: large;border-radius: 10px;" href="https://docs.google.com/spreadsheets/d/1YjRLyu-1GgwUHfYo-y0zAzZ3sbrVPmEhSOvAc5MdUqk/edit?usp=sharing" title="View/edit all current poster requests"><b>Request Form Responses Spreadsheet</b></a></h2>
+        <br>
+        <a style="background-color:rgb(177, 17, 17); color:white; width:400px;border:3px solid white;height: 20px; font-size: large;border-radius: 10px;" href="https://docs.google.com/spreadsheets/d/1a7IYOzcl7J__MuYMvnLmqXzfA-UKpbdA-Bh55sF8-DQ/edit?gid=0#gid=0" title="View/edit what ID #'s are for what posters"><b>Poster ID Number Spreadsheet</b></a></h2>
+        <br>
+        <a style="background-color:rgb(177, 17, 17); color:white; width:400px;border:3px solid white;height: 20px; font-size: large;border-radius: 10px;" href="https://docs.google.com/spreadsheets/d/1Oh4vvfWrFq2AO-aPNCUa1XoWnOBm37uY7-8lQRLh1z8/edit?usp=sharing" title="View/edit number of posters we have"><b>Poster Inventory Spreadsheet</b></a></h2>
+        <br>
+        <a style="background-color:rgb(177, 17, 17); color:white; width:400px;border:3px solid white;height: 20px; font-size: large;border-radius: 10px;" href="https://docs.google.com/forms/d/1dABn8CWftpWbHTcYo5FDkqtZIIe-TpH1gTvWLlieNVc/edit" title="add new or delete old posters from the form"><b>Edit Poster Request Form</b></a></h2>
+        <br>
+        <a style="background-color:rgb(177, 17, 17); color:white; width:400px;border:3px solid white;height: 20px; font-size: large;border-radius: 10px;" href="http://www.impawards.com/" title="Search for digital images of movie posters"><b>Download Poster images for form</b></a></h2>
+        <br>
+        <a style="background-color:rgb(177, 17, 17); color:white; width:400px;border:3px solid white;height: 20px; font-size: large;border-radius: 10px;" href="/new_look/Extra/add-deleteEmployeeInfo.html" title="How to add a new employee or delete an old one from the website system"><b>How to add/delete Employees to website</b></a></h2>
+        <br>
+        <a style="background-color:rgb(177, 17, 17); color:white; width:400px;border:3px solid white;height: 20px; font-size: large;border-radius: 10px;" href="/new_look/Extra/editPosterImagesInfo.html" title="How to edit images tab"><b>How to edit and upload poster images tab</b></a></h2>
+
+        </p>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            closeNav();
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>
+    eval(atob("IGZ1bmN0aW9uIGNoZWNrUGFzc3dvcmQoKSB7CiAgICAgIC8vIE1hcCBvZiBwYXNzd29yZHMgdG8gcGxheWVyIEhUTUwgcGFnZXMKICAgICAgY29uc3QgcGFzc3dvcmRNYXAgPSB7CiAgICAgICAgIlBvcGNvcm40NDg2ISI6ICJQYXNzd29yZC5odG1sIiwKICAgICAgICAiIFBvcGNvcm40NDg2ISI6ICJQYXNzd29yZC5odG1sIiwKICAgICAgICAiUG9wY29ybjQ0ODYhICI6ICJQYXNzd29yZC5odG1sIiwKICAgICAgICAiIFBvcGNvcm40NDg2ISAiOiAiUGFzc3dvcmQuaHRtbCIsCiAgICAgICAgLy8gQWRkIG1vcmUgYXMgbmVlZGVkCiAgICAgIH07CgogICAgICBjb25zdCBwYXNzd29yZCA9IHByb21wdCgiVGhpcyBwYWdlIGlzIGZvciB0aGUgd2Vic2l0ZSBtYW5hZ2VyIG9ubHksIFBsZWFzZSB0eXBlIGluIHBhc3N3b3JkIHRvIGNvbnRpbnVlXG5DYXNlIFNlbnNpdGl2ZSAtIERlbGV0ZSBhbnkgZXh0cmEgU3BhY2VzIiwgIiAiKTsKCiAgICAgIGlmIChwYXNzd29yZE1hcFtwYXNzd29yZF0pIHsKICAgICAgICAvL3dpbmRvdy5sb2NhdGlvbi5ocmVmID0gcGFzc3dvcmRNYXBbcGFzc3dvcmRdOwogICAgICAgIC8vZG9jdW1lbnQuYm9keS5zdHlsZS5kaXNwbGF5ID0gImJsb2NrIjsgLy8gU2hvdyBwYWdlIGlmIGNvcnJlY3QKICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcucHJvdGVjdGVkZm9ybScpLnN0eWxlLmRpc3BsYXkgPSAiYmxvY2siOyAvLyBTaG93IG9ubHkgdGhlIHByb3RlY3RlZCBzZWN0aW9uCgoKICAgICAgfSBlbHNlIHsKICAgICAgICAvL3dpbmRvdy5sb2NhdGlvbi5ocmVmID0gImh0dHA6Ly93d3cubG9uZ3ZpZXdhbWNicmVha3Jvb20uY29tIjsKICAgICAgICB3aW5kb3cuaGlzdG9yeS5iYWNrKCk7CiAgICAgIH0KCiAgICB9CgogICAgd2luZG93Lm9ubG9hZCA9IGNoZWNrUGFzc3dvcmQ7"));
+  </script>
+</body>
+
+</html>
