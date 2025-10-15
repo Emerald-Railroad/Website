@@ -8,12 +8,20 @@
     <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
     <link rel="stylesheet" href="../../css/new.web.css">
 </head>
-
+<style>
+    text3 {
+                background-color: rgb(0, 0, 0);
+                padding: 3px;
+                border: 2px solid orange;
+                border-radius: 10px;
+                
+            }
+</style>
 <body>
     <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
         <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
             title="Poster Rules and New Info"> &#9776;</span>Poster Requests <div class="homebutton" id="homebutton"><a
-                style="all: inherit;" href="/index.html"><img src="/images/amc_white.png"></a></div>
+                style="all: inherit;" href="../../index.html"><img src="../../images/amc_white.png"></a></div>
         </h1>
     </div>
     <div id="mySidenav" class="sidenav">
@@ -51,7 +59,7 @@
                         <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names""></div>
 
                         <script "Code_For_Requests_Dropdown">
-                            fetch('/menu_buttons/Requests_Dropdown_Button.html')
+                            fetch('/menu_buttons/Quick_Menu_Access_Bar.html')
                                 .then(response => response.text())
                                 .then(data => document.getElementById('View_Request_Dropdown').innerHTML = data);
                         </script>
@@ -74,6 +82,13 @@
             <text2 id="nextFriday">Next Weekly Request Reset:</text2>
         </div>
     </h2>
+
+    <div class="Website End of Life">
+        <h2 style="color: white;text-align: center;position: relative;align-items: center;">
+            <div style="display:flex;align-items: cetner;justify-content: center;"><text3>Last Day for Online Poster requests ends on October 31st 2025!<br> After the shutdown, Please put all new requests into the binder at concession!</text3></div>
+        </h2>
+    </div>
+
     <div class="form">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzgK9ZQTUqcPcOOKulfdlgIWJ7c9PXZq9lj2oYjFJvnaQFCQ/viewform?embedded=true">
             Loading…
