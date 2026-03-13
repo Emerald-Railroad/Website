@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMC Poster Requests</title>
-    <link rel="icon" type="image/x-icon" href="amc_logo.jpg">
-    <link rel="stylesheet" href="../css/new.web.css">
+    <!--<link rel="icon" type="image/x-icon" href="amc_logo.jpg">-->
+    <link rel="stylesheet" href="../../css/new.web.css">
 </head>
 <style>
     text3 {
@@ -16,22 +16,25 @@
                 border-radius: 10px;
                 
             }
+
+    iframe {
+            width: 100%;
+            height: 1100px;
+            border: 0;
+            border-radius: 10px;
+            border: 5px solid #b10221;
+
+
+        }
 </style>
 <body>
     <div style="position: sticky; top: 0; left:0;right:0;z-index:2;">
-        <h1><span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
-            title="Poster Rules and New Info"> &#9776;</span>Longview 10 <div class="homebutton" id="homebutton"><a
-                style="all: inherit;" href="/index.html"><img src="/images/amc_white.png"></a></div>
+        <h1><!--<span onclick="openNav()" class="menu" style="display:inherit;position:absolute;width:30px;height:35px;"
+            title="Poster Rules and New Info"> &#9776;</span>-->Poster Requests <div class="homebutton" id="homebutton"><a
+                style="all: inherit;" href="../../index.html"><img src="../../images/amc_white.png"></a></div>
         </h1>
     </div>
-    <div style ="background: url(../images/amcbackground.jpg) center no-repeat, url(../images/theatre.png) center right;background-size: 1000px;" alt="AMC Longview 10">
-        <br></br>
-        <br></br>
-        <br></br>
-        <!--<h2 style ="text-align: center;color: blue;margin-bottom:-25px;margin-top:-50px;padding: 5px;"><a style="color:blue; width:302px;border:2px solid black;height: 20px;font-size: large;border-radius: 20px;" href="/new_look/menus/Important.html"><b>New Inventory Tab!</b></a></h2>-->
-        <br>
-        </div>
-    <div id="mySidenav" class="sidenav">
+    <!--<div id="mySidenav" class="sidenav">
         <a style="color:#ffffff;background-color:inherit"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br />
         <div id="Menu_Buttons" "Website_Menu"></div>
@@ -41,8 +44,8 @@
                 .then(response => response.text())
                 .then(data => document.getElementById('Menu_Buttons').innerHTML = data);
         </script>
-      </div>
-    <script>
+      </div>-->
+    <!--<script>
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
           document.getElementById("main").style.marginLeft = "50px";
@@ -54,141 +57,61 @@
           document.getElementById("main").style.marginLeft= "0";
           openDropdown.classList.remove('show');
         }
-        </script>
+        </script>-->
 
     <div class="pages">
         <p>
             <div style="background-image: url(../../images/red.jpg);background-position: right center;" class="dropdown">
-                <a id="newsbutton" class ="newsbutton" style="border:2px solid black;height: 20px;border-radius: 10px;" href="/new_look/menus/inventory.html" title="See what poster are available"><b>Poster Inv</b></a>
-                <button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="../../images/request.png" alt="reqggguest logo" style="float:right;width:17px;height:17px;margin-left:5px;"></button>
+                <a id="newsbutton" class ="newsbutton" style="border:2px solid black;height: 20px;border-radius: 10px;width: 120px;" href="https://amctheatres4-my.sharepoint.com/:x:/g/personal/emuniz_amctheatres_com/IQANZ5wS6xmqQY732toyO-97AXo2pfROW7N4A3tKdoTA7Rg?e=g5g4Qg" title="See whats new this week!"><b>View Requests</b></a>
+                <!--<button onclick="myFunction()" class="dropbtn" title="View which posters you have requested"><b>View Requests</b><img src="../../images/request.png" alt="request logo" style="float:right;width:17px;height:17px;margin-left:5px;" href="/new_look/home_page_links/view_requests.html"></button>-->
                 <div style="background-color: rgb(0, 0, 0);position:absolute; border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;" id="myDropdown" class="dropdown-content">
-                    <div style ="font-weight: bold;">
+                    <!--<div style ="font-weight: bold;">
                         <div id="View_Request_Dropdown" "View_Requests_Dropdown_Names""></div>
-                        <script "Code_For_Requests_Dropdown">
-                            fetch('/menu_buttons/Requests_Dropdown_Button.html')
 
+                        <script "Code_For_Requests_Dropdown">
+                            fetch('/menu_buttons/Quick_Menu_Access_Bar.html')
                                 .then(response => response.text())
                                 .then(data => document.getElementById('View_Request_Dropdown').innerHTML = data);
-                        </script>
+                        </script>-->
+                        
                 </div>
-               </div>
-                
-               <a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px" href="https://amctheatres.workvivo.us/directory/people/4000883291" title="Contact Axel if you have any questions"><b>Contact</b><img src="/images/workvivo.jpg" alt="workvivo logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>
-                 
+                 <!--<a id="menubutton" class ="contactbutton" style="border:2px solid black;border-radius: 10px" href="https://amctheatres.workvivo.us/directory/people/4000883291" title="Contact Axel if you have any questions"><b>Contact</b><img src="/images/workvivo.jpg" alt="workvivo logo" style="float:right;width:20px;height:20px;margin-left:5px"></a>-->
+               </div>                 
             </div>
         </p>
     </div>
-
-    <!--<div "Old_look_Button">
-        <h2 style ="text-align: center;padding: 5px;"><p style = "background-color: inherit; border: inherit;">Check out The New Inventory Tab!<p style="color: lightskyblue;background-color: inherit;font-size: medium;border: none;">The Inventory Tab has been changed! Click New Inventory tab! at the top of the page to view new changes.</p><!--<a style="background-color:white; color:red; width:144px;border:3px solid black;height: 20px; font-size: large;border-radius: 10px;" href="new_look/changelog.html" title="View what is new"><b>Review Changes</b></a></h2>-->
-    </div>
-
     <br>
+    <!-- Delete comments to restore website requests
+    <h2 style="text-align:center;margin-top:0px;color: black;font-size: x-large;">
+        <div style="display:flex;align-items: cetner;justify-content: center;font-size: large;">
+            <text2>Reminder: You can only request one poster per week!</text2>
+        </div>
+    </h2>
+    <h2 style="text-align:center;margin-top:0px;color: black;font-size: x-large;">
+        <div style="display:flex;align-items: cetner;justify-content: center;">
+            <text2 id="nextFriday">Next Weekly Request Reset:</text2>
+        </div>
+    </h2>
+    -->
 
-    <div class="home">
+    <div class="Website End of Life">
         <h2 style="color: white;text-align: center;position: relative;align-items: center;">
-            <div style="display:flex;align-items: cetner;justify-content: center;"><text>Welcome to the Breakroom
-                    Website!</text></div>
+            <div style="display:flex;align-items: cetner;justify-content: center;"><text3>Fill out the form to submit your request<br>Click View Requests button to see spreadsheet<br><br>For any future questions about posters, Please message Eric<br></text3></div>
         </h2>
     </div>
-
-     <div class="Website End of Life">
-        <h2 style="color: white;text-align: center;position: relative;align-items: center;">
-            <div style="display:flex;align-items: cetner;justify-content: center;"><text3>Online Poster Requests have been disabled,<br>Please put all new requests into the binder at concession!<br><br>For any future questions about posters, Please message Lee<br></text3></div>
-        </h2>
+    <div class="form">
+        <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=SpRCE5MtfUus5tKEJEcPSJetG7DsSUpEvW1lj3zpQwxUNkhBMk9GMUZESkdaWEYzREwxUllDWEtPSi4u&origin=QRCode/viewform?embedded=true">
+        </iframe>
     </div>
+    <h6 style="text-align: center;color: #6b6b6b;">Scroll up after submitting form<br><br>Created by Axel Menges</h6>
 
-    <div "requests">
-        <h2
-            style="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;">
-            <tex>Request a Movie Poster</tex>
-        </h2>
-        <hr style="margin-top: 0px;margin-bottom: 0px;">
-        <div id="requestlogo" class="requestlogo">
-            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a
-                    href="new_look/home_page_links/poster_request.html" style="all: inherit;"><img
-                        src="../images/poster_request_logo.png" alt="AMC Poster Logo"></a></h2>
-        </div>
-
-        <h4 style="color: White; text-align: center;margin-top: -55px;">Click image above to visit the poster request
-            form.</h4>
-
-    </div>
-
-    <!--<div "AMC_NEWS">
-        <h2
-            style="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;">
-            <tex>See Whats New With AMC!</tex>
-        </h2>
-        <hr style="margin-top: 0px;margin-bottom: 0px;border-color:red">
-        <div id="workplacelogo" class="workplacelogo">
-            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a
-                    href="new_look/menus/AMC News/CurrentNews.html" style="all: inherit;"><img
-                        src="../images/newsLogo.png" alt="AMC NEWS"></a></h2>
-        </div>
-
-        <h4 style="color: White; text-align: center;margin-top: -55px;">Click image above to visit AMC News.</h4>
-
-    </div>-->
-
-    <div "Workplace">
-        <h2
-            style="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;">
-            <tex>Chat & Explore AMC ALL Access!</tex>
-        </h2>
-        <hr style="margin-top: 0px;margin-bottom: 0px;border-color:#ffffff">
-        <div id="workplacelogo" class="workplacelogo">
-            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a
-                    href="https://amctheatres.workvivo.us/" style="all: inherit;"><img style="border-radius: 15px;"
-                        src="../images/allaccesslogo.png" alt="AMC All Access Logo"></a></h2>
-        </div>
-        <h4 style="color: White; text-align: center;margin-top: -55px;">Click image above to visit AMC ALL Access</h4>
-
-    </div>
-
-    <div "Workforce">
-        <h2
-            style="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;">
-            <tex>Workforce!</tex>
-        </h2>
-        <hr style="margin-top: 0px;margin-bottom: 0px;border-color:red">
-        <div id="workplacelogo" class="workplacelogo">
-            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a
-                    href="https://amc.cloud.infor.com/etm/" style="all: inherit;"><img style="border-radius: 15px;"
-                        src="../images/workforce.png" alt="Workforce Logo"></a></h2>
-        </div>
-
-        <h4 style="color: White; text-align: center;margin-top: -55px;">Click image above to visit workforce.</h4>
-
-    </div>
-    <div "Learning_Studio">
-        <h2
-            style="color: white;text-align: left;position: relative;align-items: center;margin-left: 5px; margin-bottom: 2px;">
-            <tex>Learning Studio!</tex>
-        </h2>
-        <hr style="margin-top: 0px;margin-bottom: 0px;border-color:white">
-        <div id="workplacelogo" class="workplacelogo">
-            <h2 style="background-color: inherit;padding:15px;margin-top: 0%;"><a
-                    href="https://www.amclearningstudio.com/directory" style="all: inherit;"><img style="border-radius: 15px"
-                        src="../images/learning.png" alt="Learning Studio Logo"></a></h2>
-        </div>
-
-        <h4 style="color: White; text-align: center;margin-top: -55px;">Click image above to visit Learning Studios.
-        </h4>
-
-    </div>
-    <h5 style="text-align: center;color: white">Check out the menu button for more features</h5>
-    <br>
-    <h6 style="text-align: center;color: #6b6b6b;">Created by Axel Menges</h6>
-
-
-    <script>
+    <!--<script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
             closeNav();
         }
 
-        window.onclick = function (event) {
+        window.onclick = function(event) {
             if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 for (var i = 0; i < dropdowns.length; i++) {
@@ -201,6 +124,21 @@
         }
     </script>
 
+<script>
+    function getNextFriday() {
+      const today = new Date();
+      const day = today.getDay(); // Sunday = 0, Monday = 1, ..., Friday = 5
+      const daysUntilFriday = (5 - day + 7) % 7 || 7; // Always get next Friday
+      const nextFriday = new Date(today);
+      nextFriday.setDate(today.getDate() + daysUntilFriday);
+
+      const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById("nextFriday").textContent = "Next Weekly Request Limit Reset: " + nextFriday.toLocaleDateString(undefined, options);
+    }
+
+    getNextFriday();
+  </script>-->
+  
 </body>
 
 </html>
