@@ -59,6 +59,14 @@
             flex: 1;
         }
 
+        .requestForm {
+            width: 400px;
+            height: 100%;
+            margin: auto;
+            padding: 10px;
+            flex: 1;
+        }
+
         .protectedform {
             display:none;
             width: 90%;
